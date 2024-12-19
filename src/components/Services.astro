@@ -1,0 +1,60 @@
+---
+const services = [
+  {
+    icon: "../../feather-sprite.svg#layout",
+    title: "UX & UI",
+    description:
+      "Designing interfaces that are intuitive, efficient, and enjoyable to use.",
+  },
+  {
+    icon: "../../feather-sprite.svg#smartphone",
+    title: "Web & Mobile App",
+    description:
+      "Transforming ideas into exceptional web and mobile app experiences.",
+  },
+  {
+    icon: "../../feather-sprite.svg#pen-tool",
+    title: "Design & Creative",
+    description:
+      "Crafting visually stunning designs that connect with your audience.",
+  },
+  {
+    icon: "../../feather-sprite.svg#code",
+    title: "Development",
+    description:
+      "Bringing your vision to life with the latest technology and design trends.",
+  },
+];
+---
+
+<section
+  class="pb-16 pt-44 px-4 -mt-24 z-10 rounded-b-[124px] bg-[url('/src/lib/bg-light-grainy.webp')]"
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="flex justify-center mb-16 rotate-12">
+      <span
+        class="px-6 py-2 bg-white rounded-full text-gray-800 font-medium shadow-sm"
+      >
+        Servicios
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {
+        services.map((service) => (
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-6">
+              <svg class="feather">
+                <use href={service.icon} />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">
+              {service.title}
+            </h3>
+            <p class="text-gray-600 leading-relaxed">{service.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
