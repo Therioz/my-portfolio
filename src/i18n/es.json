@@ -1,0 +1,157 @@
+{
+  "SEO_TITLE_1": "Nodica",
+  "SEO_TITLE_2": "Transforming complexity into clarity",
+  "SEO_DESCRIPTION": "Transformamos ideas en soluciones digitales innovadoras, impulsando el crecimiento de tu negocio con tecnología de vanguardia.",
+  "SEO_TITLE_3": "Contacto",
+  "HEADER": {
+    "SERVICES_TITLE": "Servicios",
+    "CLIENTS_TITLE": "Clientes",
+    "TEMP_TECH_STACK": "Tecnologías",
+    "LOGO_ARIA": "Ir a la página principal",
+    "CONTACT_BUTTON": "Contáctanos"
+  },
+
+  "SERVICES": {
+    "TITLE": "Servicios",
+    "LEARN_MORE_BTN": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
+    "SUB_MENU_1": {
+      "TITLE": "Desarrollo e Integración de Software",
+      "DESCRIPTION": "Aplicaciones móviles, sitios web y soluciones de software personalizadas con una perfecta integración de sistemas."
+    },
+    "SUB_MENU_2": {
+      "TITLE": "Consultoría y Asistencia Tecnológica",
+      "DESCRIPTION": "Orientación experta, asistencia continua y automatización de procesos para un rendimiento tecnológico óptimo."
+    },
+    "SUB_MENU_3": {
+      "TITLE": "Datos e Inteligencia Artificial",
+      "DESCRIPTION": "Innovaciones de IA, análisis avanzado de datos y marketing en la nube para el crecimiento empresarial."
+    }
+  },
+
+  "WHYCHOOSEUS": {
+    "TITLE": "Porqué elegir Nodica?",
+    "SUB_MENU_1": {
+      "TITLE": "Agilidad en cada paso",
+      "DESCRIPTION": "Nos adaptamos rápidamente a tus necesidades, garantizando entregas rápidas y eficientes sin comprometer la calidad."
+    },
+    "SUB_MENU_2": {
+      "TITLE": "Tecnologías de punta",
+      "DESCRIPTION": "Trabajamos con las herramientas y plataformas más avanzadas del mercado para brindarte soluciones innovadoras y escalables."
+    },
+    "SUB_MENU_3": {
+      "TITLE": "Efectividad comprobada",
+      "DESCRIPTION": "Nuestro enfoque se centra en resultados. Diseñamos estrategias y productos que cumplen tus objetivos y superan tus expectativas."
+    },
+    "SUB_MENU_4": {
+      "TITLE": "Optimización de costos",
+      "DESCRIPTION": "Ofrecemos servicios de alta calidad a precios competitivos, maximizando el retorno de tu inversión."
+    }
+  },
+
+  "WHATWEDO": {
+    "TITLE": "En Nodica nos destacamos por...",
+    "SUBTITLE": "comprender profundamente las necesidades únicas de cada cliente, priorizando la resolución y el análisis de problemas con precisión y creatividad. Cada proyecto se encara como una oportunidad para diseñar soluciones personalizadas que no solo aborden los desafíos actuales, sino que también impulsen los objetivos estratégicos de nuestros clientes.",
+    "SUB_MENU": {
+      "SUB_MENU_1": "Metodología de trabajo orientada a objetivos",
+      "SUB_MENU_2": "Diseño compatible con todo tipo de dispositivos",
+      "SUB_MENU_3": "Acuerdo de confidecialidad",
+      "SUB_MENU_4": "Comunicación directa y transparente",
+      "SUB_MENU_5": "Entrega puntual",
+      "SUB_MENU_6": "Alta calificación en GTMetrix y Web.dev",
+      "SUB_MENU_7": "Páginas con alta velocidad de carga y rendimiento",
+      "SUB_MENU_8": "Siempre a la vanguardia de la tecnología"
+    }
+  },
+
+  "SECTION_CLIENTS": {
+    "SUBTITLE": "Casos de éxito",
+    "TITLE": "Nuestras Soluciones Hicieron Realidad Su Visión",
+    "DESCRIPTION": "Estas historias de éxito demuestran nuestro compromiso de ofrecer soluciones y servicios excepcionales que impulsen resultados tangibles y la transformación empresarial de nuestros clientes.",
+    "LEARN_MORE_BTN": "Ver Casos de Éxito"
+  },
+
+  "SECTION_TECHNOLOGY": {
+    "TITLE": "Nuestras tecnologías",
+    "DESCRIPTION": "Para garantizarte soluciones eficientes y escalables, cada herramienta se selecciona estratégicamente destacando su versatilidad y capacidad de adaptacion a diferentes necesidades."
+  },
+
+  "SOLUTION_PAGESET": {
+    "TITLE": "Servicios",
+    "SUBTITLE": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
+    "SOLUTION_PAGE_GROUP_1": {
+      "TITLE": "Desarrollo e Integración de Software",
+      "SOLUTION_1": "Desarrollo de Sitios Web",
+      "SOLUTION_2": "Desarrollo de Aplicaciones Móviles",
+      "SOLUTION_3": "Desarrollo de Software Personalizado",
+      "SOLUTION_4": "Integración de Sistemas",
+      "SOLUTION_5": "Soluciones de Comercio Electrónico"
+    },
+    "SOLUTION_PAGE_GROUP_2": {
+      "TITLE": "Consultoría y Asistencia Tecnológica",
+      "SOLUTION_1": "Consultoría Tecnológica",
+      "SOLUTION_2": "Mantenimiento y Soporte Técnico",
+      "SOLUTION_3": "Automatización de Procesos de Negocio"
+    },
+    "SOLUTION_PAGE_GROUP_3": {
+      "TITLE": "Datos e Inteligencia Artificial",
+      "SOLUTION_1": "Inteligencia Artificial",
+      "SOLUTION_2": "Análisis de Datos y Big Data",
+      "SOLUTION_3": "Servicios de Marketing en la Nube"
+    }
+  },
+
+  "FOOTER": {
+    "SECTION_OUR_PRESENCE": {
+      "TITLE": "Encuentranos en",
+      "COUNTRY_1": {
+        "COUNTRY": "Paraguay",
+        "ADDRESS_1": "Tte. Jara Troche c/",
+        "ADDRESS_2": "Juan de Salazar y Espinoza",
+        "CITY": "Asuncion"
+      },
+      "COUNTRY_2": {
+        "COUNTRY": "Estados unidos",
+        "ADDRESS_1": "123 Main Street",
+        "ADDRESS_2": "Anytown, ST 12345",
+        "CITY": "United States"
+      }
+    },
+    "SECTION_BRAND": "© 2024 Nodica"
+  },
+
+  "ERROR_404": {
+    "TITLE": "Página no encontrada",
+    "BACK_HOMEPAGE_BTN": "Volver a la página de inicio"
+  },
+
+  "CONTACT_PAGE": {
+    "CONTACT_TITLE_1": "Impulsá tu empresa",
+    "CONTACT_TITLE_2": "con Nodica!",
+    "CONTACT_DESCRIPTION": "Tomá la iniciativa y dejanos un mensaje asi te daremos la solucion que estabas necesitando",
+    "CONTACT_FORM": {
+      "SERVICE_TYPE": {
+        "TITLE": "Necesito ayuda en:",
+        "SERVICE_1": "Desarrollo de software",
+        "SERVICE_2": "Consultoría",
+        "SERVICE_3": "Diseño de software"
+      },
+      "CLIENT_NAME": "Nombre",
+      "CLIENT_LASTNAME": "Apellido",
+      "CLIENT_EMAIL": "Correo Electrónico",
+      "CLIENT_PHONE": "Teléfono",
+      "CLIENT_COUNTRY": {
+        "TITLE": "País",
+        "COUNTRY_1": "Paraguay",
+        "COUNTRY_2": "Estados Unidos",
+        "COUNTRY_3": "Argentina",
+        "COUNTRY_4": "Brasil",
+        "COUNTRY_5": "Chile",
+        "COUNTRY_6": "Uruguay",
+        "COUNTRY_7": "Ecuador",
+        "COUNTRY_8": "Colombia",
+        "COUNTRY_9": "Perú"
+      },
+      "FORM_BUTTON_SEND": "Enviar"
+    }
+  }
+}

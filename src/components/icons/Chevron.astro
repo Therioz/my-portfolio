@@ -1,0 +1,36 @@
+---
+interface Props {
+  size: number;
+  orientation: "up" | "right" | "down";
+  color: string;
+}
+
+const { size, orientation, color } = Astro.props;
+let finalOrientation = "";
+
+if (orientation === "up") {
+  finalOrientation = "rotate-180";
+}
+if (orientation === "right") {
+  finalOrientation = "-rotate-90 duration-300";
+}
+if (orientation === "down") {
+  finalOrientation = "duration-300 group-hover:rotate-180 transition-all";
+}
+---
+
+<svg
+  class={finalOrientation}
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke={color}
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+  ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+    d="M6 9l6 6l6 -6"></path></svg
+>

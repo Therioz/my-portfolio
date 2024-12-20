@@ -1,0 +1,157 @@
+{
+  "SEO_TITLE_1": "Nodica",
+  "SEO_TITLE_2": "Transforming complexity into clarity",
+  "SEO_DESCRIPTION": "We transform ideas into innovative digital solutions, driving your business growth with cutting-edge technology.",
+  "SEO_TITLE_3": "Contact us",
+  "HEADER": {
+    "SERVICES_TITLE": "Services",
+    "CLIENTS_TITLE": "Clients",
+    "TEMP_TECH_STACK": "Technologies",
+    "LOGO_ARIA": "Go to main page",
+    "CONTACT_BUTTON": "Get in Touch"
+  },
+
+  "SERVICES": {
+    "TITLE": "Services",
+    "LEARN_MORE_BTN": "We build solutions that perfectly fit your needs",
+    "SUB_MENU_1": {
+      "TITLE": "Software Development and Integration",
+      "DESCRIPTION": "Custom mobile apps, websites, and software solutions with seamless system integration."
+    },
+    "SUB_MENU_2": {
+      "TITLE": "Technology Consulting and Support",
+      "DESCRIPTION": "Expert guidance, continuous support, and process automation for optimal tech performance."
+    },
+    "SUB_MENU_3": {
+      "TITLE": "Data and Artificial Intelligence",
+      "DESCRIPTION": "AI innovations, advanced data analysis, and cloud marketing for business growth."
+    }
+  },
+
+  "WHYCHOOSEUS": {
+    "TITLE": "Why choose Nodica?",
+    "SUB_MENU_1": {
+      "TITLE": "Sharpness in Every Step",
+      "DESCRIPTION": "We adapt quickly to your needs, ensuring fast and efficient deliveries without compromising quality."
+    },
+    "SUB_MENU_2": {
+      "TITLE": "Cutting-Edge Technologies",
+      "DESCRIPTION": "We work with the most advanced tools and platforms on the market to provide you with innovative and scalable solutions."
+    },
+    "SUB_MENU_3": {
+      "TITLE": "Proven Effectiveness",
+      "DESCRIPTION": "Our approach focuses on results. We design strategies and products that meet your objectives and exceed your expectations."
+    },
+    "SUB_MENU_4": {
+      "TITLE": "Cost Optimization",
+      "DESCRIPTION": "We offer high-quality services at competitive prices, maximizing your return on investment."
+    }
+  },
+
+  "WHATWEDO": {
+    "TITLE": "At Nodica, we excel in...",
+    "SUBTITLE": "deeply understanding the unique needs of each client, prioritizing problem-solving and analysis with precision and creativity. Every project is approached as an opportunity to design tailored solutions that not only address current challenges but also drive our clients' strategic goals forward.",
+    "SUB_MENU": {
+      "SUB_MENU_1": "Goal-Driven Methodology",
+      "SUB_MENU_2": "Pixel Perfect on Devices",
+      "SUB_MENU_3": "Non-Disclosure Agreement",
+      "SUB_MENU_4": "Transparent Communication",
+      "SUB_MENU_5": "On-Time Delivery",
+      "SUB_MENU_6": "High GTMetrix & Web.dev Rating",
+      "SUB_MENU_7": "Page Speed Performance",
+      "SUB_MENU_8": "Always using Cutting-Edge Technologies"
+    }
+  },
+
+  "SECTION_CLIENTS": {
+    "SUBTITLE": "Success stories",
+    "TITLE": "Our Solutions Brought Their Vision to Life",
+    "DESCRIPTION": "These success stories showcase our commitment to delivering exceptional solutions and services that drive tangible results and business transformation for our clients.",
+    "LEARN_MORE_BTN": "See Our Success Stories"
+  },
+
+  "SECTION_TECHNOLOGY": {
+    "TITLE": "Our Tech Stack",
+    "DESCRIPTION": "To ensure efficient and scalable solutions, every tool is strategically selected, emphasizing its versatility and ability to adapt to various needs."
+  },
+
+  "SOLUTION_PAGESET": {
+    "TITLE": "Services",
+    "SUBTITLE": "We build solutions that perfectly fit your needs",
+    "SOLUTION_PAGE_GROUP_1": {
+      "TITLE": "Software Development and Integration",
+      "SOLUTION_1": "Website Development",
+      "SOLUTION_2": "Mobile Development",
+      "SOLUTION_3": "Custom Software Development",
+      "SOLUTION_4": "Software integration",
+      "SOLUTION_5": "E-commerce solutions"
+    },
+    "SOLUTION_PAGE_GROUP_2": {
+      "TITLE": "Consulting and Tech Support",
+      "SOLUTION_1": "Tech Consulting",
+      "SOLUTION_2": "Tech Support and Maintenance",
+      "SOLUTION_3": "Business Automation"
+    },
+    "SOLUTION_PAGE_GROUP_3": {
+      "TITLE": "Data and Artificial Intelligence",
+      "SOLUTION_1": "Artificial Intelligence",
+      "SOLUTION_2": "Data Analysis and Big data",
+      "SOLUTION_3": "Cloud Marketing Services"
+    }
+  },
+
+  "FOOTER": {
+    "SECTION_OUR_PRESENCE": {
+      "TITLE": "Visit us at",
+      "COUNTRY_1": {
+        "COUNTRY": "Paraguay",
+        "ADDRESS_1": "Tte. Jara Troche c/",
+        "ADDRESS_2": "Juan de Salazar y Espinoza",
+        "CITY": "Asuncion"
+      },
+      "COUNTRY_2": {
+        "COUNTRY": "United States",
+        "ADDRESS_1": "123 Main Street",
+        "ADDRESS_2": "Anytown, ST 12345",
+        "CITY": "United States"
+      }
+    },
+    "SECTION_BRAND": "© 2024 Nodica"
+  },
+
+  "ERROR_404": {
+    "TITLE": "Page not found",
+    "BACK_HOMEPAGE_BTN": "Go back to homepage"
+  },
+
+  "CONTACT_PAGE": {
+    "CONTACT_TITLE_1": "Grow your business",
+    "CONTACT_TITLE_2": "with Nodica!",
+    "CONTACT_DESCRIPTION": "Make the first step and contact us, we promise to give you the best solution to your needs",
+    "CONTACT_FORM": {
+      "SERVICE_TYPE": {
+        "TITLE": "What are you looking for?",
+        "SERVICE_1": "Software Development",
+        "SERVICE_2": "Consulting",
+        "SERVICE_3": "Software Design"
+      },
+      "CLIENT_NAME": "Name",
+      "CLIENT_LASTNAME": "Last Name",
+      "CLIENT_EMAIL": "E-mail",
+      "CLIENT_PHONE": "Phone",
+      "CLIENT_COUNTRY": {
+        "TITLE": "Country",
+        "COUNTRY_1": "Paraguay",
+        "COUNTRY_2": "United States",
+        "COUNTRY_3": "Argentina",
+        "COUNTRY_4": "Brasil",
+        "COUNTRY_5": "Chile",
+        "COUNTRY_6": "Uruguay",
+        "COUNTRY_7": "Ecuador",
+        "COUNTRY_8": "Colombia",
+        "COUNTRY_9": "Peru"
+      },
+      "FORM_BUTTON_SEND": "Send"
+    }
+  }
+}
