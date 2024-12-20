@@ -27,13 +27,14 @@ const services = [
 ];
 ---
 
-<section
-  class="pb-16 pt-44 px-4 -mt-24 z-10 rounded-b-[124px] bg-[url('/src/lib/bg-light-grainy.webp')]"
+<div
+  class="relative z-20 pb-36 pt-56 px-4 -mt-24 rounded-b-[124px] bg-[url('/src/lib/bg-light-grainy.webp')]"
 >
   <div class="max-w-7xl mx-auto">
-    <div class="flex justify-center mb-16 rotate-12">
+    <div class="relative flex items-center justify-center mb-16">
+      <div class="border-t border-gray-300 w-full"></div>
       <span
-        class="px-6 py-2 bg-white rounded-full text-gray-800 font-medium shadow-sm"
+        class="absolute px-8 py-3 bg-white text-xl rounded-full text-gray-800 font-medium shadow-sm rotate-12"
       >
         Servicios
       </span>
@@ -57,4 +58,4 @@ const services = [
       }
     </div>
   </div>
-</section>
+</div>
