@@ -1,46 +1,193 @@
-<header class="bg-[url('/src/lib/bg-dark-grainy.webp')]">
-  <nav class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 sm:py-10 py-3">
-    <div class="flex flex-1 items-center justify-start">
+<header
+  id="header"
+  class="bg-[url('/src/lib/bg-dark-grainy.webp')] top-0 z-50 relative"
+>
+  <nav
+    id="nav"
+    class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 sm:py-10 py-3 flex flex-col space-y-10"
+  >
+    <div class="flex flex-1 items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <a class="font-bold md:text-lg text-sm" href="/"
+        <a id="email" class="font-bold text-lg" href="/"
           >danfisch.dev@gmail.com</a
         >
         <button
-          class="px-7 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors"
+          id="copy-button"
+          class="px-7 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
-          Copy
+          Copiar
         </button>
         <button
-          class="px-7 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors"
+          class="px-9 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
           CV
         </button>
       </div>
+      <!-- Hamburger dropdown menu start -->
+      <div
+        id="menu-div"
+        class="px-7 pb-3 pt-4 border-black border-2 rounded-full"
+      >
+        <button id="menu-toggle" class="menu-btn">
+          <div class="line line1 bg-black"></div>
+          <div class="line line2 bg-black"></div>
+          <div class="line line3 bg-black"></div>
+        </button>
+      </div>
+      <!-- Hamburger dropdown menu end -->
     </div>
+    <!-- MOBILE NAV -->
+    <div id="mobile-menu" class="hidden text-center group relative">
+      <div
+        class="flex flex-col justify-between items-center gap-8 pt-8 fixed inset-x-0 bg-black border-t-gray-400 border-t-2"
+      >
+        <!-- SOLUTIONS -->
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
+          >Inicio</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
+          >SERVICES</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
+          >ABOUT</a
+        >
+        <a
+          href="#"
+          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
+          >BLOG</a
+        >
+      </div>
+    </div>
+    <!-- MOBILE NAV END -->
   </nav>
 </header>
 
-<!-- OLD NAV BAR LINKS, WILL USE LATER -->
-<!-- 
-<a
-href="#"
-class="rounded-md px-3 py-2 text-md font-medium text-gray-500 hover:text-black"
-aria-current="page">START</a
->
-<a
-href="#"
-class="rounded-md px-3 py-2 text-md font-medium text-gray-500 hover:text-black"
-aria-current="page">SERVICES</a
->
-<a
-href="#"
-class="rounded-md px-3 py-2 text-md font-medium text-gray-500 hover:text-black"
->ABOUT</a
->
-<a
-href="#"
-class="rounded-md px-3 py-2 text-md font-medium text-gray-500 hover:text-black"
->BLOG</a
-> -->
+<div id="copy-feedback" class="hidden z-50 absolute bottom-16 left-[40%]">
+  <p
+    class="text-white bg-gray-800 px-5 py-2 rounded-full flex justify-evenly gap-2 items-center"
+  >
+    <svg class="feather">
+      <use href="../../feather-sprite.svg#check-circle"></use>
+    </svg>
+    Email copiado al portapapeles!
+  </p>
+</div>
 
-<!-- <div class="relative flex h-16 items-center justify-between"> -->
+<style>
+  .menu-btn {
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .line1 {
+    top: 0;
+  }
+
+  .line2 {
+    top: 8px;
+  }
+
+  .line3 {
+    top: 16px;
+  }
+
+  .menu-btn.open .line1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-btn.open .line2 {
+    opacity: 0;
+  }
+
+  .menu-btn.open .line3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+</style>
+
+<script>
+  const menu = document.getElementById("mobile-menu");
+  const button = document.getElementById("menu-toggle");
+  const buttonDiv = document.getElementById("menu-div");
+  const header = document.getElementById("header");
+  const email = document.getElementById("email");
+  const nav = document.getElementById("nav");
+  const burgerLines = document.querySelectorAll(".line");
+
+  document
+    .getElementById("menu-toggle")
+    ?.addEventListener("click", function () {
+      if (menu) {
+        menu?.classList.toggle("hidden");
+        button?.classList.toggle("open");
+        header?.classList.toggle("bg-[url('/src/lib/bg-dark-grainy.webp')]");
+        header?.classList.toggle("bg-black");
+        nav?.classList.toggle("border-b-2");
+        nav?.classList.toggle("border-b-white");
+        email?.classList.toggle("text-white");
+        buttonDiv?.classList.toggle("border-white");
+        burgerLines.forEach((line) => {
+          line.classList.toggle("bg-white");
+        });
+      }
+    });
+
+  document.addEventListener("scroll", () => {
+    if (menu && !menu.classList.contains("hidden")) {
+      menu.classList.add("hidden");
+      button?.classList.remove("open");
+      header?.classList.toggle("bg-[url('/src/lib/bg-dark-grainy.webp')]");
+      header?.classList.remove("bg-black");
+      nav?.classList.toggle("border-b-2");
+      nav?.classList.toggle("border-b-white");
+      email?.classList.toggle("text-white");
+      buttonDiv?.classList.toggle("border-white");
+      burgerLines.forEach((line) => {
+        line.classList.toggle("bg-white");
+      });
+    }
+  });
+
+  // Get references to the elements
+  const copyButton = document.getElementById("copy-button");
+  const copyFeedback = document.getElementById("copy-feedback");
+
+  // Add click event listener to the button
+  copyButton?.addEventListener("click", () => {
+    // Copy the text to the clipboard
+    navigator.clipboard
+      .writeText("danfisch.dev@gmail.com")
+      .then(() => {
+        // Show feedback message
+        copyFeedback?.classList.remove("hidden");
+        copyFeedback?.classList.add("translate-y-6");
+        // copyFeedback?.classList.add("duration-300");
+
+        // Hide feedback after 2 seconds
+        setTimeout(() => {
+          copyFeedback?.classList.add("hidden");
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Failed to copy text: ", error);
+      });
+  });
+</script>

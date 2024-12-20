@@ -12,18 +12,6 @@ module.exports = {
       colors: {
         lightGray: "#cacccb",
       },
-      backgroundImage: {
-        grainy: `
-          radial-gradient(circle, rgba(0,0,0,0.02) 1%, transparent 1%),
-          radial-gradient(circle, rgba(0,0,0,0.02) 1%, transparent 1%)
-        `,
-      },
-      backgroundSize: {
-        grainy: "3px 3px",
-      },
-      backgroundPosition: {
-        grainy: "0 0, 10px 10px",
-      },
     },
   },
   plugins: [
@@ -35,8 +23,8 @@ module.exports = {
           backgroundPosition: "0 0, 10px 10px",
         },
         ".feather": {
-          width: "24px",
-          height: "24px",
+          width: "30px",
+          height: "30px",
           stroke: "currentColor",
           strokeWidth: "2",
           strokeLinecap: "round",
