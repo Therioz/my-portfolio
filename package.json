@@ -14,6 +14,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "astro": "^5.0.9",
     "feather-icons": "^4.29.2",
+    "lenis": "^1.1.18",
     "tailwindcss": "^3.4.16"
   }
 }
