@@ -4,8 +4,77 @@
 >
   <nav
     id="nav"
-    class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 sm:py-10 py-3 flex flex-col space-y-10"
+    class="mx-auto max-w-7xl sm:pb-10 pb-3 flex flex-col space-y-10"
   >
+    <!-- MOBILE NAV -->
+    <nav
+      id="mobile-menu"
+      class="mob-menu hidden bg-black p-8 text-white absolute top-[100%] left-0 right-0 overflow-hidden"
+    >
+      <div class="mx-auto max-w-6xl">
+        {/* Main Menu */}
+        <div class="mb-20 space-y-6">
+          <div
+            class="flex items-center justify-between border-b border-white/10 py-6"
+          >
+            <a
+              href="/cv/"
+              class="flex items-baseline md:text-6xl text-3xl font-light tracking-tight hover:text-gray-400"
+            >
+              CV
+              <span class="ml-4 text-2xl text-gray-500">(01)</span>
+            </a>
+            <svg class="feather">
+              <use href="../../feather-sprite.svg#arrow-up-right"></use>
+            </svg>
+          </div>
+          <div
+            class="flex items-center justify-between border-b border-white/10 py-6"
+          >
+            <a
+              href="/contacto/"
+              class="flex items-baseline md:text-6xl text-3xl font-light tracking-tight hover:text-gray-400"
+            >
+              Contáctame
+              <span class="ml-4 text-2xl text-gray-500">(02)</span>
+            </a>
+            <svg class="feather">
+              <use href="../../feather-sprite.svg#arrow-up-right"></use>
+            </svg>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div class="mt-auto flex flex-col gap-8 md:pt-10 pt-5">
+          {/* Social Links */}
+          <div class="space-y-4">
+            <h3 class="text-lg text-gray-500">Encuéntrame en:</h3>
+            <div class="flex flex-wrap gap-6">
+              <a
+                href="https://github.com/Therioz"
+                target="_blank"
+                class="rounded-md px-3 py-2 text-md font-medium text-gray-700 hover:text-gray-400 transition-colors"
+              >
+                <svg class="feather">
+                  <use href="../../feather-sprite.svg#github"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dany-fischer-ab9741235/"
+                target="_blank"
+                class="rounded-md px-3 py-2 text-md font-medium text-gray-700 hover:text-gray-400 transition-colors"
+              >
+                <svg class="feather">
+                  <use href="../../feather-sprite.svg#linkedin"></use>
+                </svg></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- MOBILE NAV END -->
+
     <div class="flex flex-1 items-center justify-between gap-3">
       <div class="flex items-center gap-3">
         <a id="email" class="font-bold text-lg" href="/"
@@ -15,7 +84,7 @@
           id="copy-button"
           class="px-7 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
-          Copiar
+          Copiar Email
         </button>
         <button
           class="px-9 py-3 text-sm text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
@@ -36,35 +105,6 @@
       </div>
       <!-- Hamburger dropdown menu end -->
     </div>
-    <!-- MOBILE NAV -->
-    <div id="mobile-menu" class="hidden text-center group relative">
-      <div
-        class="flex flex-col justify-between items-center gap-8 pt-8 fixed inset-x-0 bg-black border-t-gray-400 border-t-2"
-      >
-        <!-- SOLUTIONS -->
-        <a
-          href="#"
-          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
-          >Inicio</a
-        >
-        <a
-          href="#"
-          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
-          >SERVICES</a
-        >
-        <a
-          href="#"
-          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
-          >ABOUT</a
-        >
-        <a
-          href="#"
-          class="rounded-md px-3 py-2 text-md font-medium text-white hover:text-gray-400"
-          >BLOG</a
-        >
-      </div>
-    </div>
-    <!-- MOBILE NAV END -->
   </nav>
 </header>
 
@@ -80,6 +120,15 @@
 </div>
 
 <style>
+  .mob-menu {
+    transform: translateY(-100%);
+  }
+
+  .mob-menu.active {
+    transform: translateY(0px);
+    transition: transform 0.3s linear;
+  }
+
   .menu-btn {
     cursor: pointer;
     position: relative;
@@ -136,6 +185,7 @@
     .getElementById("menu-toggle")
     ?.addEventListener("click", function () {
       if (menu) {
+        menu?.classList.toggle("active");
         menu?.classList.toggle("hidden");
         button?.classList.toggle("open");
         header?.classList.toggle("bg-[url('/src/lib/bg-dark-grainy.webp')]");
