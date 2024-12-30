@@ -25,18 +25,20 @@
       </h2>
       <div class="flex flex-col sm:flex-row gap-4 min-[400px]:w-[360px] py-10">
         <button
-          class="bg-gray-900 text-white px-6 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
+          id="emailButton"
+          class="bg-gray-900 text-white px-8 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
         >
-          <span>Email me</span>
+          <span>Email</span>
 
           <svg class="feather">
             <use href="../../feather-sprite.svg#mail"></use>
           </svg>
         </button>
         <button
-          class="bg-gray-900 text-white px-6 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
+          id="whatsappButton"
+          class="bg-gray-900 text-white px-8 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
         >
-          <span>Let's Talk</span>
+          <span>WhatsApp</span>
 
           <svg class="feather">
             <use href="../../feather-sprite.svg#arrow-right"></use>
@@ -46,3 +48,33 @@
     </div>
   </div>
 </div>
+
+<script>
+  document
+    .getElementById("whatsappButton")
+    ?.addEventListener("click", function () {
+      const phoneNumber = "1234567890";
+      const message = encodeURIComponent(
+        "Buenas. Necesito ayuda con un proyecto y me gustaria saber mas información sobre tus servicios. Gracias."
+      );
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+      window.open(whatsappURL, "_blank");
+    });
+
+  document
+    .getElementById("emailButton")
+    ?.addEventListener("click", function () {
+      const recipient = "danfisch.dev@gmail.com";
+      const subject = encodeURIComponent("Info sobre servicios");
+      const body = encodeURIComponent(
+        "Buenas. Me interesa saber mas información sobre sus servicios para llevar a cabo un proyecto."
+      );
+
+      // Create the mailto link
+      const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+      // Open the mailto link
+      window.location.href = mailtoLink;
+    });
+</script>
