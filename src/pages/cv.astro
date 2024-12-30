@@ -1,0 +1,90 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <section
+    class="bg-[url('/src/lib/bg-light-grainy.webp')] py-24 px-4 sm:px-6 lg:px-8"
+  >
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <main>
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Summary</h2>
+          <p class="text-gray-600">
+            A brief, engaging summary of your professional background, key
+            skills, and career objectives. Make it compelling and tailored to
+            the type of roles you're seeking.
+          </p>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Work Experience</h2>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">Job Title</h3>
+            <p class="text-gray-600 italic">
+              Company Name | Start Date - End Date
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>Key responsibility or achievement</li>
+              <li>Another key responsibility or achievement</li>
+              <li>One more key responsibility or achievement</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">
+              Previous Job Title
+            </h3>
+            <p class="text-gray-600 italic">
+              Previous Company Name | Start Date - End Date
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>Key responsibility or achievement</li>
+              <li>Another key responsibility or achievement</li>
+              <li>One more key responsibility or achievement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Education</h2>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Degree Name</h3>
+            <p class="text-gray-600 italic">
+              University Name | Graduation Year
+            </p>
+            <p class="text-gray-600 mt-2">
+              Any relevant details about your studies, achievements, or
+              projects.
+            </p>
+          </div>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+              >Skill 1</span
+            >
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+              >Skill 2</span
+            >
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+              >Skill 3</span
+            >
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+              >Skill 4</span
+            >
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+              >Skill 5</span
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+</Layout>
