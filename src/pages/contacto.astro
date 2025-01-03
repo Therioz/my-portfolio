@@ -14,37 +14,39 @@ import Layout from "@layouts/Layout.astro";
         </p>
       </div>
 
-      <form class="mt-8 space-y-6">
+      <form id="contactForm" class="mt-8 space-y-6">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm text-gray-700"
-              >First name</label
+              >Nombre</label
             >
             <input
               type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="First name"
+              id="name"
+              name="name"
+              placeholder="Nombre"
               class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
           <div>
             <label for="last-name" class="block text-sm text-gray-700"
-              >Last name</label
+              >Apellido</label
             >
             <input
               type="text"
-              id="last-name"
-              name="last-name"
-              placeholder="Last name"
+              id="lastName"
+              name="lastName"
+              placeholder="Apellido"
               class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
         </div>
 
         <div>
-          <label for="email" class="block text-sm text-gray-700">Email</label>
+          <label for="email" class="block text-sm text-gray-700"
+            >Correo Electrónico</label
+          >
           <input
             type="email"
             id="email"
@@ -56,122 +58,200 @@ import Layout from "@layouts/Layout.astro";
 
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div>
-            <label for="team-size" class="block text-sm text-gray-700"
-              >Team size</label
+            <label for="phone" class="block text-sm text-gray-700"
+              >Teléfono</label
             >
-            <select
-              id="team-size"
-              name="team-size"
-              class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            >
-              <option>1-50 people</option>
-              <option>51-200 people</option>
-              <option>201-500 people</option>
-              <option>501+ people</option>
-            </select>
+            <div class="mt-1 flex rounded-md shadow-sm">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(210) 000-0000"
+                class="block w-full rounded-l-md rounded-r-md border border-gray-300 px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              />
+            </div>
           </div>
 
           <div>
             <label for="location" class="block text-sm text-gray-700"
-              >Location</label
+              >País</label
             >
             <select
-              id="location"
-              name="location"
+              id="country"
+              name="country"
               class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
-              <option value="NZ">🇳🇿 New Zealand</option>
-              <option value="AU">🇦🇺 Australia</option>
-              <option value="US">🇺🇸 United States</option>
-              <option value="UK">🇬🇧 United Kingdom</option>
+              <option value="PY">Paraguay</option>
+              <option value="AR">Argentina</option>
+              <option value="US">Estados Unidos</option>
+              <option value="BR">Brasil</option>
+              <option value="PR">Perú</option>
+              <option value="CL">Colombia</option>
+              <option value="EC">Ecuador</option>
+              <option value="BO">Bolivia</option>
             </select>
-          </div>
-        </div>
-
-        <div>
-          <label for="phone" class="block text-sm text-gray-700"
-            >Phone number</label
-          >
-          <div class="mt-1 flex rounded-md shadow-sm">
-            <span
-              class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm"
-            >
-              NZ +64
-            </span>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="(210) 000-0000"
-              class="block w-full rounded-none rounded-r-md border border-gray-300 px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            />
           </div>
         </div>
 
         <div>
           <label for="message" class="block text-sm text-gray-700"
-            >Message</label
+            >Mensaje</label
           >
           <textarea
             id="message"
             name="message"
             rows="4"
-            placeholder="Leave us a message..."
+            placeholder="Deja tu mensaje aquí..."
             class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           ></textarea>
         </div>
 
         <div>
-          <label class="block text-sm text-gray-700 mb-2">Services</label>
+          <label class="block text-sm text-gray-700 mb-2">Servicios</label>
           <div class="space-y-2">
-            <label class="inline-flex items-center">
-              <input
-                type="checkbox"
-                name="services"
-                value="website-design"
-                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              />
-              <span class="ml-2">Website design</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="checkbox"
-                name="services"
-                value="ux-design"
-                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              />
-              <span class="ml-2">UX design</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="checkbox"
-                name="services"
-                value="content-creation"
-                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              />
-              <span class="ml-2">Content creation</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="checkbox"
-                name="services"
-                value="brand-strategy"
-                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              />
-              <span class="ml-2">Brand strategy</span>
-            </label>
+            <select
+              id="service"
+              name="service"
+              class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            >
+              <option>Diseño de sitio web</option>
+              <option>Diseño UX</option>
+              <option>Creación de Contenido</option>
+              <option>Consultoría</option>
+            </select>
           </div>
         </div>
 
         <div>
           <button
+            id="submitButton"
             type="submit"
             class="w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Send message
+            Enviar mensaje
           </button>
         </div>
       </form>
+
+      <div
+        id="customAlert"
+        class="fixed top-4 right-4 max-w-sm w-full transform transition-all duration-300 translate-x-full"
+      >
+        <div class="relative p-4 rounded-lg shadow-lg border">
+          <div class="flex items-center gap-3">
+            <div id="alertIcon" class="flex-shrink-0 w-5 h-5"></div>
+            <p id="alertMessage" class="text-sm font-medium"></p>
+          </div>
+          <button
+            id="closeAlert"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
+
+<script is:inline>
+  const form = document.getElementById("contactForm");
+  const submitButton = document.getElementById("submitButton");
+  const customAlert = document.getElementById("customAlert");
+  const alertMessage = document.getElementById("alertMessage");
+  const alertIcon = document.getElementById("alertIcon");
+  const closeAlert = document.getElementById("closeAlert");
+
+  let timeoutId = null;
+
+  const showAlert = (message, isError) => {
+    // Clear any existing timeout
+    if (timeoutId) clearTimeout(timeoutId);
+
+    // Set alert styles based on type
+    if (isError) {
+      customAlert.className =
+        "fixed bottom-4 right-4 max-w-sm w-full transform transition-all duration-300";
+      customAlert.firstElementChild.className =
+        "relative p-4 rounded-lg shadow-lg border border-red-200 bg-red-50";
+      alertMessage.className = "text-sm font-medium text-red-800";
+      alertIcon.innerHTML = `<svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+      </svg>`;
+    } else {
+      customAlert.className =
+        "fixed bottom-4 right-4 max-w-sm w-full transform transition-all duration-300";
+      customAlert.firstElementChild.className =
+        "relative p-4 rounded-lg shadow-lg border border-green-200 bg-green-50";
+      alertMessage.className = "text-sm font-medium text-green-800";
+      alertIcon.innerHTML = `<svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>`;
+    }
+
+    alertMessage.textContent = message;
+
+    // Show alert
+    requestAnimationFrame(() => {
+      customAlert.style.transform = "translateX(0)";
+    });
+
+    // Hide alert after 10 seconds
+    timeoutId = setTimeout(hideAlert, 10000);
+  };
+
+  const hideAlert = () => {
+    customAlert.style.transform = "translateX(100%)";
+  };
+
+  // Close alert when clicking the close button
+  closeAlert?.addEventListener("click", hideAlert);
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    submitButton.disabled = true;
+
+    const formData = {
+      service: form.elements.namedItem("service").value,
+      name: form.elements.namedItem("name").value,
+      lastname: form.elements.namedItem("lastName").value,
+      email: form.elements.namedItem("email").value,
+      phone: form.elements.namedItem("phone").value,
+      country: form.elements.namedItem("country").value,
+      message: form.elements.namedItem("message").value,
+      // recaptchaToken: recaptchaResponse, // Add the token to the form data
+    };
+
+    try {
+      const response = await fetch("/api/server", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      showAlert("Message sent successfully! We'll contact you soon.", false);
+      form.reset();
+    } catch (error) {
+      console.error("Error:", error);
+      showAlert("An error occurred while sending the message.", true);
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+</script>
