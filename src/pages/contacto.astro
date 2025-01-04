@@ -241,6 +241,8 @@ import Layout from "@layouts/Layout.astro";
         body: JSON.stringify(formData),
       });
 
+      console.log(response);
+
       if (!response.ok) {
         throw new Error("Failed to send message");
       }

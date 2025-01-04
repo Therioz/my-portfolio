@@ -2,20 +2,23 @@ import type { APIRoute } from "astro";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
+export const prerender = false;
+
 export const POST: APIRoute = async ({ request }) => {
   try {
     const data = await request.json();
+
     dotenv.config();
 
-    const requiredFields = ["name", "lastname", "email"];
-    for (const field of requiredFields) {
-      if (!data[field]) {
-        return new Response(
-          JSON.stringify({ error: `Missing required field: ${field}` }),
-          { status: 400 }
-        );
-      }
-    }
+    // const requiredFields = ["name", "lastname", "email"];
+    // for (const field of requiredFields) {
+    //   if (!data[field]) {
+    //     return new Response(
+    //       JSON.stringify({ error: `Missing required field: ${field}` }),
+    //       { status: 400 }
+    //     );
+    //   }
+    // }
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -23,8 +26,8 @@ export const POST: APIRoute = async ({ request }) => {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL,
-        pass: process.env.EMAIL_PASSWORD,
+        user: "danilom666@gmail.com",
+        pass: "iigx eliv xvql tvdk",
       },
     });
 
@@ -40,24 +43,42 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const mailOptions = {
-      from: process.env.EMAIL, // Your email (receiver)
-      to: process.env.EMAIL_TO, // Sender's email
-      subject: `New Contact Form Submission from ${name}`,
+      from: "danilom666@gmail.com", // Your email (receiver)
+      to: "dangertriangle@gmail.com", // Sender's email
+      subject: `New Contact Form Submission from ${data.name}`,
       text: `
-        Name: ${data.name}
-        Lastname: ${data.lastname}
-        Email: ${data.email}
+New Contact Form Submission
+-------------------------
+
+Service: ${data.service}
+
+Contact Information:
+------------------
+Name: ${data.name} ${data.lastname}
+Email: ${data.email}
+Phone: ${data.phone || "Not provided"}
+Country: ${data.country}
+
+Message:
+--------
+${data.message}
+
+Submitted on: ${new Date().toLocaleString()}
       `,
       html: `
-        <h3>Nuevo mensaje desde tu Portfolio</h3>
-        <hr>
-        <p><strong>Datos del contacto</strong></p>
-        <ul>
-          <li><strong>Name:</strong> ${data.name} ${data.lastname}</li>
-          <li><strong>Email:</strong> ${data.email}</li>
-          <li><strong>Phone:</strong> ${data.phone || "Not provided"}</li>
-          <li><strong>Country:</strong> ${data.country}</li>
-        </ul>
+<h2>New Contact Form Submission</h2>
+<hr>
+<p><strong>Service:</strong> ${data.service}</p>
+<h3>Contact Information:</h3>
+<ul>
+  <li><strong>Name:</strong> ${data.name} ${data.lastname}</li>
+  <li><strong>Email:</strong> ${data.email}</li>
+  <li><strong>Phone:</strong> ${data.phone || "Not provided"}</li>
+  <li><strong>Country:</strong> ${data.country}</li>
+</ul>
+<h3>Message:</h3>
+<p>${data.message}</p>
+<p><em>Submitted on: ${new Date().toLocaleString()}</em></p>
       `,
     };
 
