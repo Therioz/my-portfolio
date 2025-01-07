@@ -3,22 +3,21 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
 export const prerender = false;
+dotenv.config();
 
 export const POST: APIRoute = async ({ request }) => {
   try {
     const data = await request.json();
 
-    dotenv.config();
-
-    // const requiredFields = ["name", "lastname", "email"];
-    // for (const field of requiredFields) {
-    //   if (!data[field]) {
-    //     return new Response(
-    //       JSON.stringify({ error: `Missing required field: ${field}` }),
-    //       { status: 400 }
-    //     );
-    //   }
-    // }
+    const requiredFields = ["name", "lastname", "email"];
+    for (const field of requiredFields) {
+      if (!data[field]) {
+        return new Response(
+          JSON.stringify({ error: `Missing required field: ${field}` }),
+          { status: 400 }
+        );
+      }
+    }
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -26,8 +25,8 @@ export const POST: APIRoute = async ({ request }) => {
       port: 465,
       secure: true,
       auth: {
-        user: "danilom666@gmail.com",
-        pass: "iigx eliv xvql tvdk",
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
@@ -43,8 +42,8 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const mailOptions = {
-      from: "danilom666@gmail.com", // Your email (receiver)
-      to: "dangertriangle@gmail.com", // Sender's email
+      from: process.env.EMAIL,
+      to: data.email,
       subject: `New Contact Form Submission from ${data.name}`,
       text: `
 New Contact Form Submission
