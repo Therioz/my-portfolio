@@ -1,0 +1,97 @@
+---
+import { LANGUAGES } from "../i18n/ui";
+import {
+  getRouteFromUrl,
+  useTranslatedPath,
+  getLangFromUrl,
+} from "../i18n/utils";
+
+const route = getRouteFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+const currentLocaleData = LANGUAGES[lang];
+const otherLocales = Object.values(LANGUAGES).filter(
+  (locale) => locale.code !== lang
+);
+---
+
+<div class="flex items-center gap-2">
+  <span class="text-sm font-medium language-label" data-language="es">
+    <currentLocaleData.flag />
+  </span>
+  <button
+    id="language-toggle"
+    role="switch"
+    aria-checked="true"
+    class="group relative inline-flex h-6 w-11 items-center rounded-full bg-muted transition-colors hover:bg-muted/70"
+  >
+    <span class="sr-only">Toggle language</span>
+    <span
+      class="pointer-events-none block h-5 w-5 translate-x-0.5 rounded-full bg-white shadow-lg ring-0 transition-transform duration-200"
+      id="toggle-thumb"></span>
+  </button>
+  <span class="text-sm font-medium language-label" data-language="en">
+    {
+      otherLocales.map((locale) => (
+        <li class="py-[2px]">
+          <a
+            class="rounded-md bg-white whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2 border border-gray-500/30 duration-300"
+            href={translatePath(`/${route ? route : ""}`, locale.code)}
+          >
+            <locale.flag />
+          </a>
+        </li>
+      ))
+    }
+  </span>
+</div>
+
+<script>
+  // Initialize the toggle button and its state
+  const toggleButton = document.getElementById("language-toggle");
+  const toggleThumb = document.getElementById("toggle-thumb");
+  const languageLabels = document.querySelectorAll(".language-label");
+
+  // Set initial state
+  let isSpanish = true;
+  updateToggleState();
+
+  // Add click event listener
+  toggleButton?.addEventListener("click", () => {
+    isSpanish = !isSpanish;
+    updateToggleState();
+  });
+
+  function updateToggleState() {
+    // Update button states
+    toggleButton?.setAttribute("aria-checked", String(isSpanish));
+    toggleButton?.classList.toggle("bg-primary", isSpanish);
+    toggleButton?.classList.toggle("bg-muted", !isSpanish);
+
+    // Update thumb position
+    toggleThumb?.classList.toggle("translate-x-[22px]", isSpanish);
+    toggleThumb?.classList.toggle("translate-x-0.5", !isSpanish);
+
+    // Update label colors
+    languageLabels.forEach((label) => {
+      const language = label.getAttribute("data-language");
+      if (language === "es") {
+        label.classList.toggle("text-primary", isSpanish);
+        label.classList.toggle("text-muted-foreground", !isSpanish);
+      } else {
+        label.classList.toggle("text-primary", !isSpanish);
+        label.classList.toggle("text-muted-foreground", isSpanish);
+      }
+    });
+  }
+</script>
+
+<style>
+  /* Optional: Add any additional styles here */
+  .transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+</style>
