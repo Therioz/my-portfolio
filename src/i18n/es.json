@@ -1,12 +1,14 @@
 {
-  "SEO_TITLE_1": "Nodica",
-  "SEO_TITLE_2": "Transforming complexity into clarity",
+  "SEO_TITLE_1": "Dany Fischer",
+  "SEO_TITLE_2": "Portolio",
+  "SEO_TITLE_3": "danfisch.dev@gmail.com",
   "SEO_DESCRIPTION": "Transformamos ideas en soluciones digitales innovadoras, impulsando el crecimiento de tu negocio con tecnología de vanguardia.",
-  "SEO_TITLE_3": "Contacto",
-  "HEADER": {
-    "SERVICES_TITLE": "Servicios",
-    "CLIENTS_TITLE": "Clientes",
-    "TEMP_TECH_STACK": "Tecnologías",
+  "SEO_TITLE_4": "Contáctame",
+  "NAVBAR": {
+    "COPY_EMAIL_BUTTON": "Copiar Email",
+    "CV_BUTTON": "CV",
+    "EMAIL_COPY_MESSAGE": "Email copiado al portapapeles!",
+    "SOCIAL": "Encuéntrame en:",
     "LOGO_ARIA": "Ir a la página principal",
     "CONTACT_BUTTON": "Contáctanos"
   },
@@ -125,15 +127,15 @@
   },
 
   "CONTACT_PAGE": {
-    "CONTACT_TITLE_1": "Impulsá tu empresa",
-    "CONTACT_TITLE_2": "con Nodica!",
-    "CONTACT_DESCRIPTION": "Tomá la iniciativa y dejanos un mensaje asi te daremos la solucion que estabas necesitando",
+    "CONTACT_TITLE_1": "Contáctame",
+    "CONTACT_TITLE_2": "Cuéntame sobre tus proyectos para poder brindarte la mejor solución",
     "CONTACT_FORM": {
       "SERVICE_TYPE": {
-        "TITLE": "Necesito ayuda en:",
+        "TITLE": "Servicios",
         "SERVICE_1": "Desarrollo de software",
-        "SERVICE_2": "Consultoría",
-        "SERVICE_3": "Diseño de software"
+        "SERVICE_2": "Diseño UI/UX",
+        "SERVICE_3": "Consultoría",
+        "SERVICE_4": "Creación de contenido"
       },
       "CLIENT_NAME": "Nombre",
       "CLIENT_LASTNAME": "Apellido",

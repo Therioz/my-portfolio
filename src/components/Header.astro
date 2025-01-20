@@ -1,3 +1,19 @@
+---
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
 <header
   id="header"
   class="bg-[url('/src/lib/bg-dark-grainy.webp')] top-0 z-50 relative"
@@ -21,7 +37,7 @@
               href="/cv/"
               class="flex items-baseline md:text-6xl text-3xl font-light tracking-tight hover:text-gray-400"
             >
-              CV
+              {i18n.NAVBAR.CV_BUTTON}
               <span class="ml-4 text-2xl text-gray-500">(01)</span>
             </a>
             <svg class="feather">
@@ -35,7 +51,7 @@
               href="/contacto/"
               class="flex items-baseline md:text-6xl text-3xl font-light tracking-tight hover:text-gray-400"
             >
-              Contáctame
+              {i18n.SEO_TITLE_4}
               <span class="ml-4 text-2xl text-gray-500">(02)</span>
             </a>
             <svg class="feather">
@@ -48,7 +64,7 @@
         <div class="mt-auto flex flex-col gap-8 md:pt-10 pt-5">
           {/* Social Links */}
           <div class="space-y-4">
-            <h3 class="text-lg text-gray-500">Encuéntrame en:</h3>
+            <h3 class="text-lg text-gray-500">{i18n.NAVBAR.SOCIAL}</h3>
             <div class="flex flex-wrap gap-6">
               <a
                 href="https://github.com/Therioz"
@@ -75,24 +91,30 @@
     </nav>
     <!-- MOBILE NAV END -->
 
+    <!-- DESKTOP NAV START -->
     <div class="flex flex-1 items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <a id="email" class="font-bold text-lg" href="/"
-          >danfisch.dev@gmail.com</a
-        >
+        <a id="email" class="font-bold text-lg" href="/">{i18n.SEO_TITLE_3}</a>
         <button
           id="copy-button"
           class="px-7 py-3 text-md text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
-          Copiar Email
+          {i18n.NAVBAR.COPY_EMAIL_BUTTON}
         </button>
         <button
           class="px-9 py-3 text-md text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
-          <a href="/cv/">CV</a>
+          <a href={translatePath("/cv")}>
+            {i18n.NAVBAR.CV_BUTTON}
+          </a>
         </button>
       </div>
-      <!-- Hamburger dropdown menu start -->
+
+      <!-- Language selector toggle START -->
+
+      <!-- Language selector toggle END -->
+
+      <!-- Hamburger dropdown menu START -->
       <div
         id="menu-div"
         class="px-7 pb-3 pt-4 border-black border-2 rounded-full"
@@ -103,8 +125,9 @@
           <div class="line line3 bg-black"></div>
         </button>
       </div>
-      <!-- Hamburger dropdown menu end -->
+      <!-- Hamburger dropdown menu END -->
     </div>
+    <!-- DESKTOP NAV END -->
   </nav>
 </header>
 
@@ -115,7 +138,7 @@
     <svg class="feather">
       <use href="../../feather-sprite.svg#check-circle"></use>
     </svg>
-    Email copiado al portapapeles!
+    {i18n.NAVBAR.EMAIL_COPY_MESSAGE}
   </p>
 </div>
 

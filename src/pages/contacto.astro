@@ -1,16 +1,32 @@
 ---
 import Layout from "@layouts/Layout.astro";
+
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
-<Layout>
+<Layout title=`${i18n.SEO_TITLE_4} | ${i18n.SEO_TITLE_1}`>
   <section
     class="bg-[url('/src/lib/bg-light-grainy.webp')] py-24 px-4 sm:px-6 lg:px-8"
   >
     <div class="max-w-3xl mx-auto">
       <div class="space-y-4">
-        <h1 class="text-3xl font-bold text-gray-900">Contáctame</h1>
+        <h1 class="text-3xl font-bold text-gray-900">
+          {i18n.CONTACT_PAGE.CONTACT_TITLE_1}
+        </h1>
         <p class="text-gray-600">
-          Cuéntame sobre tus proyectos para poder brindarte la mejor solución
+          {i18n.CONTACT_PAGE.CONTACT_TITLE_2}
         </p>
       </div>
 
@@ -231,7 +247,6 @@ import Layout from "@layouts/Layout.astro";
       phone: form.elements.namedItem("phone").value,
       country: form.elements.namedItem("country").value,
       message: form.elements.namedItem("message").value,
-      // recaptchaToken: recaptchaResponse, // Add the token to the form data
     };
 
     try {
