@@ -13,20 +13,30 @@
     "CONTACT_BUTTON": "Contáctanos"
   },
 
+  "HERO": {
+    "HERO_TITLE_1": "Hola, soy Dany.",
+    "HERO_TITLE_2": "Creando soluciones definitivas con enfasis",
+    "HERO_TITLE_3": "en eficiencia y diseño"
+  },
+
   "SERVICES": {
     "TITLE": "Servicios",
     "LEARN_MORE_BTN": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
     "SUB_MENU_1": {
-      "TITLE": "Desarrollo e Integración de Software",
-      "DESCRIPTION": "Aplicaciones móviles, sitios web y soluciones de software personalizadas con una perfecta integración de sistemas."
+      "TITLE": "UI & UX",
+      "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
     },
     "SUB_MENU_2": {
-      "TITLE": "Consultoría y Asistencia Tecnológica",
-      "DESCRIPTION": "Orientación experta, asistencia continua y automatización de procesos para un rendimiento tecnológico óptimo."
+      "TITLE": "Web & Aplicación Móvil",
+      "DESCRIPTION": "Transformando ideas en experiencias Web y Móvil excepcionales"
     },
     "SUB_MENU_3": {
-      "TITLE": "Datos e Inteligencia Artificial",
-      "DESCRIPTION": "Innovaciones de IA, análisis avanzado de datos y marketing en la nube para el crecimiento empresarial."
+      "TITLE": "Diseño & Creatividad",
+      "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
+    },
+    "SUB_MENU_4": {
+      "TITLE": "Desarrollo",
+      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
     }
   },
 
@@ -153,7 +163,8 @@
         "COUNTRY_9": "Perú"
       },
       "FORM_BUTTON_SEND": "Enviar",
-      "CLIENT_MESSAGE": "Cuéntame sobre tus proyectos e ideas"
+      "CLIENT_MESSAGE_1": "Mensaje",
+      "CLIENT_MESSAGE_2": "Cuéntame sobre tus proyectos e ideas"
     }
   }
 }

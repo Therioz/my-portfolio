@@ -1,27 +1,34 @@
 ---
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 const services = [
   {
     icon: "../../feather-sprite.svg#layout",
-    title: "UX & UI",
-    description: "Diseñando interfaces intuitivas, enficientes y amigables",
+    title: i18n.SERVICES.SUB_MENU_1.TITLE,
+    description: i18n.SERVICES.SUB_MENU_1.DESCRIPTION,
   },
   {
     icon: "../../feather-sprite.svg#smartphone",
-    title: "Web & Aplicación Móvil",
-    description:
-      "Transformando ideas en experiencias Web y Móvil excepcionales",
+    title: i18n.SERVICES.SUB_MENU_2.TITLE,
+    description: i18n.SERVICES.SUB_MENU_2.DESCRIPTION,
   },
   {
     icon: "../../feather-sprite.svg#pen-tool",
-    title: "Diseño & Creatividad",
-    description:
-      "Construyendo diseños atractivos que conectan con tu audiencia",
+    title: i18n.SERVICES.SUB_MENU_3.TITLE,
+    description: i18n.SERVICES.SUB_MENU_3.DESCRIPTION,
   },
   {
     icon: "../../feather-sprite.svg#code",
-    title: "Desarrollo",
-    description:
-      "Convietiendo tu vision en realidad con tecnología y diseño de punta",
+    title: i18n.SERVICES.SUB_MENU_4.TITLE,
+    description: i18n.SERVICES.SUB_MENU_4.DESCRIPTION,
   },
 ];
 ---
@@ -35,7 +42,7 @@ const services = [
       <span
         class="absolute px-8 py-3 bg-white text-2xl rounded-full text-gray-800 font-medium shadow-sm"
       >
-        Servicios
+        {i18n.SERVICES.TITLE}
       </span>
     </div>
 

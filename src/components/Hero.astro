@@ -1,17 +1,33 @@
+---
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
 <div
   class="relative z-30 bg-[url('/src/lib/bg-dark-grainy.webp')] flex flex-col justify-center px-4 sm:px-6 lg:px-8 pt-20 md:pb-28 pb-20 sm:rounded-b-[124px] rounded-b-[80px]"
 >
   <div class="max-w-7xl mx-auto">
-    <p class="sm:text-4xl text-2xl mb-4">Hola, soy Dany.</p>
+    <p class="sm:text-4xl text-2xl mb-4">{i18n.HERO.HERO_TITLE_1}</p>
     <h1 class="text-5xl sm:text-8xl font-bold leading-tight mb-4">
-      Creando soluciones definitivas con enfasis
-      <span class="text-gray-400">en enficiencia y diseño</span>
+      {i18n.HERO.HERO_TITLE_2}
+      <span class="text-gray-400">{i18n.HERO.HERO_TITLE_3}</span>
     </h1>
     <a
       class="bg-gray-900 text-white px-6 py-3 rounded-full inline-flex items-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg mt-6"
-      href="/contacto/"
+      href={translatePath("/contacto/")}
     >
-      <span>Contáctame</span>
+      <span>{i18n.SEO_TITLE_4}</span>
 
       <svg class="feather">
         <use href="../../feather-sprite.svg#arrow-right"></use>
