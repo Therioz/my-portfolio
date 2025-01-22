@@ -117,8 +117,7 @@
         "ADDRESS_2": "Anytown, ST 12345",
         "CITY": "United States"
       }
-    },
-    "SECTION_BRAND": "© 2024 Nodica"
+    }
   },
 
   "ERROR_404": {
@@ -139,10 +138,10 @@
       },
       "CLIENT_NAME": "Nombre",
       "CLIENT_LASTNAME": "Apellido",
-      "CLIENT_EMAIL": "Correo Electrónico",
+      "CLIENT_EMAIL": "tu@email.com",
       "CLIENT_PHONE": "Teléfono",
       "CLIENT_COUNTRY": {
-        "TITLE": "País",
+        "COUNTRY_LABEL": "País",
         "COUNTRY_1": "Paraguay",
         "COUNTRY_2": "Estados Unidos",
         "COUNTRY_3": "Argentina",
@@ -153,7 +152,8 @@
         "COUNTRY_8": "Colombia",
         "COUNTRY_9": "Perú"
       },
-      "FORM_BUTTON_SEND": "Enviar"
+      "FORM_BUTTON_SEND": "Enviar",
+      "CLIENT_MESSAGE": "Cuéntame sobre tus proyectos e ideas"
     }
   }
 }
