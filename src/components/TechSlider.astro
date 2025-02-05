@@ -1,8 +1,15 @@
 ---
-// import { getI18N } from "@src/i18n/index";
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
 
-// const { currentLocale } = Astro;
-// const i18n = getI18N({ currentLocale });
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <section
@@ -17,14 +24,11 @@
       <span
         class="absolute px-8 py-3 bg-white text-xl rounded-full text-gray-800 font-medium shadow-sm"
       >
-        Tecnologías
+        {i18n.SECTION_TECHNOLOGY.TITLE}
       </span>
     </div>
     <p class="text-xl text-gray-800">
-      Hecha un vistazo a las tecnologías que utilizo para ayudar a mis clientes
-      a construir sus proyectos. Estas herramientas son seleccionadas
-      minuciosamente para asegurar la máxima eficiencia y que se adapten
-      correctamente a cada desafío.
+      {i18n.SECTION_TECHNOLOGY.DESCRIPTION}
     </p>
   </div>
 

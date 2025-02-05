@@ -19,37 +19,9 @@
     "HERO_TITLE_3": "en eficiencia y diseño"
   },
 
-  "SERVICES": {
-    "TITLE": "Servicios",
-    "LEARN_MORE_BTN": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
-    "SUB_MENU_1": {
-      "TITLE": "UI & UX",
-      "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
-    },
-    "SUB_MENU_2": {
-      "TITLE": "Web & Aplicación Móvil",
-      "DESCRIPTION": "Transformando ideas en experiencias Web y Móvil excepcionales"
-    },
-    "SUB_MENU_3": {
-      "TITLE": "Diseño & Creatividad",
-      "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
-    },
-    "SUB_MENU_4": {
-      "TITLE": "Desarrollo",
-      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
-    }
-  },
-
-  "SECTION_CLIENTS": {
-    "SUBTITLE": "Casos de éxito",
-    "TITLE": "Nuestras Soluciones Hicieron Realidad Su Visión",
-    "DESCRIPTION": "Estas historias de éxito demuestran nuestro compromiso de ofrecer soluciones y servicios excepcionales que impulsen resultados tangibles y la transformación empresarial de nuestros clientes.",
-    "LEARN_MORE_BTN": "Ver Casos de Éxito"
-  },
-
   "SECTION_TECHNOLOGY": {
-    "TITLE": "Nuestras tecnologías",
-    "DESCRIPTION": "Para garantizarte soluciones eficientes y escalables, cada herramienta se selecciona estratégicamente destacando su versatilidad y capacidad de adaptacion a diferentes necesidades."
+    "TITLE": "Tecnologías",
+    "DESCRIPTION": "Hecha un vistazo a las tecnologías que utilizo para ayudar a mis clientes a construir sus proyectos. Estas herramientas son seleccionadas minuciosamente para asegurar la máxima eficiencia y que se adapten correctamente a cada desafío."
   },
 
   "ABOUT_ME": {
@@ -94,22 +66,11 @@
     }
   },
 
-  "FOOTER": {
-    "SECTION_OUR_PRESENCE": {
-      "TITLE": "Encuentranos en",
-      "COUNTRY_1": {
-        "COUNTRY": "Paraguay",
-        "ADDRESS_1": "Tte. Jara Troche c/",
-        "ADDRESS_2": "Juan de Salazar y Espinoza",
-        "CITY": "Asuncion"
-      },
-      "COUNTRY_2": {
-        "COUNTRY": "Estados unidos",
-        "ADDRESS_1": "123 Main Street",
-        "ADDRESS_2": "Anytown, ST 12345",
-        "CITY": "United States"
-      }
-    }
+  "CONTACT_ME": {
+    "TITLE": "Contáctame",
+    "DESCRIPTION": "Cuéntame sobre tu siguiente gran proyecto",
+    "CONTACT_EMAIL": "Email",
+    "CONTACT_WHATSAPP": "WhatsApp"
   },
 
   "ERROR_404": {
@@ -148,5 +109,31 @@
       "CLIENT_MESSAGE_1": "Mensaje",
       "CLIENT_MESSAGE_2": "Cuéntame sobre tus proyectos e ideas"
     }
+  },
+
+  "SERVICES_SEC": {
+    "TITLE": "Servicios",
+    "SERVICE_1": {
+      "TITLE": "UI & UX",
+      "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
+    },
+    "SERVICE_2": {
+      "TITLE": "Web & Aplicación Móvil",
+      "DESCRIPTION": "Transformando ideas en experiencias Web y Móvil excepcionales"
+    },
+    "SERVICE_3": {
+      "TITLE": "Diseño & Creatividad",
+      "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
+    },
+    "SERVICE_4": {
+      "TITLE": "Desarrollo",
+      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
+    }
+  },
+
+  "FOOTER_SECTION": {
+    "LINKS_SECTION": "Enlaces",
+    "INFORMATION_SECTION": "Información",
+    "LOCATION": "Asunción, Paraguay"
   }
 }

@@ -1,3 +1,17 @@
+---
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+---
+
 <div
   class="relative z-10 bg-[url('/src/lib/bg-dark-grainy.webp')] w-full py-12 md:py-24 flex items-center justify-center md:rounded-t-[124px] rounded-t-[80px] sm:-mt-24 -mt-10"
 >
@@ -8,7 +22,7 @@
       <span
         class="absolute px-8 py-3 bg-white text-xl rounded-full text-gray-800 font-medium shadow-sm"
       >
-        Contáctame
+        {i18n.CONTACT_ME.TITLE}
       </span>
     </div>
     <div class="flex flex-col items-center space-y-4 text-center">
@@ -21,14 +35,14 @@
         />
       </div>
       <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-        Cuéntame sobre tu siguiente gran proyecto
+        {i18n.CONTACT_ME.DESCRIPTION}
       </h2>
       <div class="flex flex-col sm:flex-row gap-4 min-[400px]:w-[360px] py-10">
         <button
           id="emailButton"
           class="bg-gray-900 text-white px-8 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
         >
-          <span>Email</span>
+          <span> {i18n.CONTACT_ME.CONTACT_EMAIL} </span>
 
           <svg class="feather">
             <use href="../../feather-sprite.svg#mail"></use>
@@ -38,7 +52,9 @@
           id="whatsappButton"
           class="bg-gray-900 text-white px-8 py-3 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-800 transition duration-300 text-lg"
         >
-          <span>WhatsApp</span>
+          <span>
+            {i18n.CONTACT_ME.CONTACT_WHATSAPP}
+          </span>
 
           <svg class="feather">
             <use href="../../feather-sprite.svg#arrow-right"></use>
