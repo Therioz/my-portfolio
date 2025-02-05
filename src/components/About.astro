@@ -1,3 +1,17 @@
+---
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+---
+
 <section class="bg-[url('/src/lib/bg-dark-grainy.webp')] py-64 -mt-24 z-0">
   <div class="max-w-7xl mx-auto">
     <div class="relative flex items-center justify-center mb-16">
@@ -5,7 +19,7 @@
       <span
         class="absolute px-8 py-3 bg-white text-xl rounded-full text-gray-800 font-medium shadow-sm"
       >
-        Sobre mi
+        {i18n.ABOUT_ME.TITLE}
       </span>
     </div>
     <div class="relative border-l-4 border-gray-300 ml-3">
@@ -15,19 +29,15 @@
         >
         </div>
         <h3 class="text-xl font-semibold text-gray-900 ml-6">
-          Desarrollador de Software, Analista y Diseñador
+          {i18n.ABOUT_ME.ABOUT_1.TITLE}
         </h3>
       </div>
       <div class="mb-8 ml-6">
         <p class="text-gray-700 mb-4">
-          Con más de 6 años de experiencia en desarrollo de sistemas y 3 años en
-          diseño web, me especializo en crear tanto paginas web como
-          aplicaciones móviles.
+          {i18n.ABOUT_ME.ABOUT_1.DESCRIPTION_1}
         </p>
         <p class="text-gray-700 mb-4">
-          Valoro invertir tiempo con el cliente para crear una conexion positiva
-          y recabar todos los minimos detalles lo cual facilita el flujo de
-          trabajo y asegurar la máxima eficiencia y satisfacción
+          {i18n.ABOUT_ME.ABOUT_1.DESCRIPTION_2}
         </p>
       </div>
       <div class="mb-8 flex items-center">
@@ -36,16 +46,12 @@
         >
         </div>
         <h3 class="text-xl font-semibold text-gray-900 ml-6">
-          Deportes y tiempo al aire libre
+          {i18n.ABOUT_ME.ABOUT_2.TITLE}
         </h3>
       </div>
       <div class="mb-8 ml-6">
         <p class="text-gray-700">
-          Cuando no estoy programando, me gusta pasar mi tiempo fuera de casa
-          haciendo deportes o caminar en el parque. Soy muy fan de prácticamente
-          todos los deportes, especialmente lo que usan una raqueta. Valoro
-          mucho la naturaleza y los animales pero no soy particularmente muy
-          apegado a los insectos.
+          {i18n.ABOUT_ME.ABOUT_2.DESCRIPTION_1}
         </p>
       </div>
       <div class="mb-8 flex items-center">
@@ -54,18 +60,12 @@
         >
         </div>
         <h3 class="text-xl font-semibold text-gray-900 ml-6">
-          Multimedia, video juegos y creatividad.
+          {i18n.ABOUT_ME.ABOUT_3.TITLE}
         </h3>
       </div>
       <div class="ml-6">
         <p class="text-gray-700">
-          La música, la fotografia, el dibujo y el arte en general representan
-          una parte fundamental de mi persona. Estos encienden mi lado creativo
-          lo cual me ayuda a traer ideas frescas e innovadoras a la hora de
-          desarrollar software. Desde joven soy bien fanatico de los video
-          juegos porque siento que me transportan a otro mundo donde puedo hacer
-          explotar mi imaginacion. Mis generos favoritos son los MMO-RPGs,
-          fantasy RGSs, arcades y aventuras.
+          {i18n.ABOUT_ME.ABOUT_3.DESCRIPTION_1}
         </p>
       </div>
     </div>

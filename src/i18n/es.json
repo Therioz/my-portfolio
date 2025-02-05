@@ -40,41 +40,6 @@
     }
   },
 
-  "WHYCHOOSEUS": {
-    "TITLE": "Porqué elegir Nodica?",
-    "SUB_MENU_1": {
-      "TITLE": "Agilidad en cada paso",
-      "DESCRIPTION": "Nos adaptamos rápidamente a tus necesidades, garantizando entregas rápidas y eficientes sin comprometer la calidad."
-    },
-    "SUB_MENU_2": {
-      "TITLE": "Tecnologías de punta",
-      "DESCRIPTION": "Trabajamos con las herramientas y plataformas más avanzadas del mercado para brindarte soluciones innovadoras y escalables."
-    },
-    "SUB_MENU_3": {
-      "TITLE": "Efectividad comprobada",
-      "DESCRIPTION": "Nuestro enfoque se centra en resultados. Diseñamos estrategias y productos que cumplen tus objetivos y superan tus expectativas."
-    },
-    "SUB_MENU_4": {
-      "TITLE": "Optimización de costos",
-      "DESCRIPTION": "Ofrecemos servicios de alta calidad a precios competitivos, maximizando el retorno de tu inversión."
-    }
-  },
-
-  "WHATWEDO": {
-    "TITLE": "En Nodica nos destacamos por...",
-    "SUBTITLE": "comprender profundamente las necesidades únicas de cada cliente, priorizando la resolución y el análisis de problemas con precisión y creatividad. Cada proyecto se encara como una oportunidad para diseñar soluciones personalizadas que no solo aborden los desafíos actuales, sino que también impulsen los objetivos estratégicos de nuestros clientes.",
-    "SUB_MENU": {
-      "SUB_MENU_1": "Metodología de trabajo orientada a objetivos",
-      "SUB_MENU_2": "Diseño compatible con todo tipo de dispositivos",
-      "SUB_MENU_3": "Acuerdo de confidecialidad",
-      "SUB_MENU_4": "Comunicación directa y transparente",
-      "SUB_MENU_5": "Entrega puntual",
-      "SUB_MENU_6": "Alta calificación en GTMetrix y Web.dev",
-      "SUB_MENU_7": "Páginas con alta velocidad de carga y rendimiento",
-      "SUB_MENU_8": "Siempre a la vanguardia de la tecnología"
-    }
-  },
-
   "SECTION_CLIENTS": {
     "SUBTITLE": "Casos de éxito",
     "TITLE": "Nuestras Soluciones Hicieron Realidad Su Visión",
@@ -85,6 +50,23 @@
   "SECTION_TECHNOLOGY": {
     "TITLE": "Nuestras tecnologías",
     "DESCRIPTION": "Para garantizarte soluciones eficientes y escalables, cada herramienta se selecciona estratégicamente destacando su versatilidad y capacidad de adaptacion a diferentes necesidades."
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "Sobre mí",
+    "ABOUT_1": {
+      "TITLE": "Desarrollador de Software, Analista y Diseñador",
+      "DESCRIPTION_1": "Con más de 6 años de experiencia en desarrollo de sistemas y 3 años endiseño web, me especializo en crear tanto paginas web como aplicaciones móviles.",
+      "DESCRIPTION_2": "Valoro invertir tiempo con el cliente para crear una conexion positiva y recabar todos los minimos detalles lo cual facilita el flujo de trabajo y asegurar la máxima eficiencia y satisfacción"
+    },
+    "ABOUT_2": {
+      "TITLE": "Deportes y tiempo al aire libre",
+      "DESCRIPTION_1": "Cuando no estoy programando, me gusta pasar mi tiempo fuera de casa haciendo deportes o caminar en el parque. Soy muy fan de prácticamente todos los deportes, especialmente lo que usan una raqueta. Valoro mucho la naturaleza y los animales pero no soy particularmente muy apegado a los insectos."
+    },
+    "ABOUT_3": {
+      "TITLE": "Multimedia, video juegos y creatividad.",
+      "DESCRIPTION_1": "La música, la fotografia, el dibujo y el arte en general representan una parte fundamental de mi persona. Estos encienden mi lado creativo lo cual me ayuda a traer ideas frescas e innovadoras a la hora de desarrollar software. Desde joven soy bien fanatico de los video juegos porque siento que me transportan a otro mundo donde puedo hacer explotar mi imaginacion. Mis generos favoritos son los MMO-RPGs, fantasy RGSs, arcades y aventuras."
+    }
   },
 
   "SOLUTION_PAGESET": {
