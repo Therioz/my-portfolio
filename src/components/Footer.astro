@@ -10,6 +10,8 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="bg-[url('/src/lib/bg-dark-grainy.webp')] text-gray-800 py-12">
@@ -44,12 +46,12 @@ const lang = getLangFromUrl(Astro.url);
         <nav class="flex flex-col">
           <p class="text-xl font-bold">{i18n.FOOTER_SECTION.LINKS_SECTION}</p>
           <a
-            href="#services-section"
+            href={translatePath("/cv")}
             class="rounded-md py-2 text-md font-medium text-gray-700 hover:text-gray-400 transition-colors"
             >CV</a
           >
           <a
-            href="#services-section"
+            href={translatePath("/contacto")}
             class="rounded-md py-2 text-md font-medium text-gray-700 hover:text-gray-400 transition-colors"
             >{i18n.SEO_TITLE_4}</a
           >

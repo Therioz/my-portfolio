@@ -135,5 +135,109 @@
     "LINKS_SECTION": "Enlaces",
     "INFORMATION_SECTION": "Información",
     "LOCATION": "Asunción, Paraguay"
+  },
+
+  "CV_PAGE": {
+    "OBJECTIVES_SECTION": {
+      "TITLE": "Objetivos",
+      "DESCRIPTION": "Actualmente tengo el objetivo de ser un desarrollador full stack. Inicie mi camino en el mundo web/mobile en el 2021 y deseo trabajar en una empresa con un buen equipo de profesionales de los cuales aprender y aportar mis conocimientos para lograr metas."
+    },
+
+    "WORK_EXPERIENCE": {
+      "TITLE": "Experiencia Laboral",
+      "EXPERIENCE_1": {
+        "TITLE": "Diseñador Web",
+        "DESCRIPTION": "Nodica Website | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Relevamiento de datos por medio de reuniones con el cliente con el fin de definir especificaciones y discutir sobre el diseño del sitio.",
+          "DETAIL_2": "Maquetación y construcción de sitio web utilizando Astro y Javascript.",
+          "DETAIL_3": "Utilización de GitHub como controlador de versiones."
+        }
+      },
+      "EXPERIENCE_2": {
+        "TITLE": "Diseñador Web | Especialista SEO",
+        "DESCRIPTION": "TecnoCuentas Blog | Febrero 2021 - Noviembre 2023",
+        "DETAILS": {
+          "DETAIL_1": "Construcción y mantenimiento del blog utilizando Wordpress y MySQL.",
+          "DETAIL_2": "Creación y edición de contenido optimizado para SEO.",
+          "DETAIL_3": "Actualización regular de contenido manteniendo un buen ranking SEO."
+        }
+      },
+      "EXPERIENCE_3": {
+        "TITLE": "Desarrollador de Sistemas",
+        "DESCRIPTION": "Horizonte S.R.L | Enero 2013 - Diciembre 2019",
+        "DETAILS": {
+          "DETAIL_1": "Modificación del sistema Solubank de acuerdo a las especificaciones del usuario expandiendo su capacidad utilizando Genexus, RPG y SQL.",
+          "DETAIL_2": "Soporte satisfactorio a equipos de distintos departamentos en la implementación de nuevos módulos a Solubank.",
+          "DETAIL_3": "Ejecución de pruebas exhaustivas previo al pase a producción."
+        }
+      },
+      "EXPERIENCE_4": {
+        "TITLE": "Encargado en Relaciones Publicas",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Planned and organized conferences and meeting spaces.",
+          "DETAIL_2": "Provided student recruiting and orientation support at expos to promote the college at various events."
+        }
+      },
+      "EXPERIENCE_5": {
+        "TITLE": "Call Center",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Contacted students to provide reminders of upcoming events, assignments, and exams.",
+          "DETAIL_2": "Created and maintained Excel spreadsheet tracking over 500 students a week."
+        }
+      }
+    },
+
+    "EDUCATION": {
+      "TITLE": "Educación",
+      "EDUCATION_1": {
+        "DEGREE": "Licenciatura en Análisis de Sistemas",
+        "UNIVERSITY": "Universidad Autónoma de Asunción | 2015",
+        "LOCATION": "Asunción, Paraguay"
+      },
+      "EDUCATION_2": {
+        "DEGREE": "Primaria y Secundaria",
+        "UNIVERSITY": "Saint Mary School | 2008",
+        "LOCATION": "Fernando de la Mora, Paraguay"
+      }
+    },
+
+    "CERTIFICATIONS": {
+      "TITLE": "Certificaciones",
+      "CERTIF_1": "Web Developer Bootcamp - Udemy 2021",
+      "CERTIF_2": "SEO for Wordpress - Udemy 2020",
+      "CERTIF_3": "The Complete Wordpress Development Course - Udemy 2020",
+      "CERTIF_4": "Business Intelligence Basics - Innovaciones Tecnológicas, Paraguay 2018",
+      "CERTIF_5": "Genexus Evo I Basic/Advanced - Soluciones Integrales, Paraguay 2012",
+      "CERTIF_6": "SQL-RPG, RPG-ILE - Softshop, Paraguay 2012"
+    },
+
+    "SKILLSET": {
+      "TITLE": "Habilidades Técnicas",
+      "SKILL_1": "HTML",
+      "SKILL_2": "CSS",
+      "SKILL_3": "JAVASCRIPT",
+      "SKILL_4": "WORDPRESS",
+      "SKILL_5": "NODE",
+      "SKILL_6": "REACT",
+      "SKILL_7": "REACT NATIVE",
+      "SKILL_8": "BOOTSTRAP",
+      "SKILL_9": "JAVA",
+      "SKILL_10": "SQL",
+      "SKILL_11": "RPG",
+      "SKILL_12": "GIT",
+      "SKILL_13": "GENEXUS",
+      "SKILL_14": "WINDOWS",
+      "SKILL_15": "LINUX",
+      "SKILL_16": "MACOS"
+    },
+    "LANGUAGES": {
+      "TITLE": "Idiomas",
+      "LANGUAGE_1": "Español: Nativo.",
+      "LANGUAGE_2": "Inglés: Avanzado.",
+      "LANGUAGE_3": "Aleman: Basico."
+    }
   }
 }

@@ -1,157 +1,139 @@
 {
-  "SEO_TITLE_1": "Nodica",
-  "SEO_TITLE_2": "Transforming complexity into clarity",
-  "SEO_DESCRIPTION": "We transform ideas into innovative digital solutions, driving your business growth with cutting-edge technology.",
-  "SEO_TITLE_3": "Contact us",
-  "HEADER": {
-    "SERVICES_TITLE": "Services",
-    "CLIENTS_TITLE": "Clients",
-    "TEMP_TECH_STACK": "Technologies",
-    "LOGO_ARIA": "Go to main page",
-    "CONTACT_BUTTON": "Get in Touch"
+  "SEO_TITLE_1": "Dany Fischer",
+  "SEO_TITLE_2": "Portolio",
+  "SEO_TITLE_3": "danfisch.dev@gmail.com",
+  "SEO_DESCRIPTION": "Transformamos ideas en soluciones digitales innovadoras, impulsando el crecimiento de tu negocio con tecnología de vanguardia.",
+  "SEO_TITLE_4": "Contáctame",
+  "NAVBAR": {
+    "COPY_EMAIL_BUTTON": "Copiar Email",
+    "CV_BUTTON": "CV",
+    "EMAIL_COPY_MESSAGE": "Email copiado al portapapeles!",
+    "SOCIAL": "Encuéntrame en:",
+    "LOGO_ARIA": "Ir a la página principal",
+    "CONTACT_BUTTON": "Contáctanos"
   },
 
-  "SERVICES": {
-    "TITLE": "Services",
-    "LEARN_MORE_BTN": "We build solutions that perfectly fit your needs",
-    "SUB_MENU_1": {
-      "TITLE": "Software Development and Integration",
-      "DESCRIPTION": "Custom mobile apps, websites, and software solutions with seamless system integration."
-    },
-    "SUB_MENU_2": {
-      "TITLE": "Technology Consulting and Support",
-      "DESCRIPTION": "Expert guidance, continuous support, and process automation for optimal tech performance."
-    },
-    "SUB_MENU_3": {
-      "TITLE": "Data and Artificial Intelligence",
-      "DESCRIPTION": "AI innovations, advanced data analysis, and cloud marketing for business growth."
-    }
-  },
-
-  "WHYCHOOSEUS": {
-    "TITLE": "Why choose Nodica?",
-    "SUB_MENU_1": {
-      "TITLE": "Sharpness in Every Step",
-      "DESCRIPTION": "We adapt quickly to your needs, ensuring fast and efficient deliveries without compromising quality."
-    },
-    "SUB_MENU_2": {
-      "TITLE": "Cutting-Edge Technologies",
-      "DESCRIPTION": "We work with the most advanced tools and platforms on the market to provide you with innovative and scalable solutions."
-    },
-    "SUB_MENU_3": {
-      "TITLE": "Proven Effectiveness",
-      "DESCRIPTION": "Our approach focuses on results. We design strategies and products that meet your objectives and exceed your expectations."
-    },
-    "SUB_MENU_4": {
-      "TITLE": "Cost Optimization",
-      "DESCRIPTION": "We offer high-quality services at competitive prices, maximizing your return on investment."
-    }
-  },
-
-  "WHATWEDO": {
-    "TITLE": "At Nodica, we excel in...",
-    "SUBTITLE": "deeply understanding the unique needs of each client, prioritizing problem-solving and analysis with precision and creativity. Every project is approached as an opportunity to design tailored solutions that not only address current challenges but also drive our clients' strategic goals forward.",
-    "SUB_MENU": {
-      "SUB_MENU_1": "Goal-Driven Methodology",
-      "SUB_MENU_2": "Pixel Perfect on Devices",
-      "SUB_MENU_3": "Non-Disclosure Agreement",
-      "SUB_MENU_4": "Transparent Communication",
-      "SUB_MENU_5": "On-Time Delivery",
-      "SUB_MENU_6": "High GTMetrix & Web.dev Rating",
-      "SUB_MENU_7": "Page Speed Performance",
-      "SUB_MENU_8": "Always using Cutting-Edge Technologies"
-    }
-  },
-
-  "SECTION_CLIENTS": {
-    "SUBTITLE": "Success stories",
-    "TITLE": "Our Solutions Brought Their Vision to Life",
-    "DESCRIPTION": "These success stories showcase our commitment to delivering exceptional solutions and services that drive tangible results and business transformation for our clients.",
-    "LEARN_MORE_BTN": "See Our Success Stories"
+  "HERO": {
+    "HERO_TITLE_1": "Hola, soy Dany.",
+    "HERO_TITLE_2": "Creando soluciones definitivas con enfasis",
+    "HERO_TITLE_3": "en eficiencia y diseño"
   },
 
   "SECTION_TECHNOLOGY": {
-    "TITLE": "Our Tech Stack",
-    "DESCRIPTION": "To ensure efficient and scalable solutions, every tool is strategically selected, emphasizing its versatility and ability to adapt to various needs."
+    "TITLE": "Tecnologías",
+    "DESCRIPTION": "Hecha un vistazo a las tecnologías que utilizo para ayudar a mis clientes a construir sus proyectos. Estas herramientas son seleccionadas minuciosamente para asegurar la máxima eficiencia y que se adapten correctamente a cada desafío."
   },
 
-  "SOLUTION_PAGESET": {
-    "TITLE": "Services",
-    "SUBTITLE": "We build solutions that perfectly fit your needs",
-    "SOLUTION_PAGE_GROUP_1": {
-      "TITLE": "Software Development and Integration",
-      "SOLUTION_1": "Website Development",
-      "SOLUTION_2": "Mobile Development",
-      "SOLUTION_3": "Custom Software Development",
-      "SOLUTION_4": "Software integration",
-      "SOLUTION_5": "E-commerce solutions"
+  "ABOUT_ME": {
+    "TITLE": "Sobre mí",
+    "ABOUT_1": {
+      "TITLE": "Desarrollador de Software, Analista y Diseñador",
+      "DESCRIPTION_1": "Con más de 6 años de experiencia en desarrollo de sistemas y 3 años endiseño web, me especializo en crear tanto paginas web como aplicaciones móviles.",
+      "DESCRIPTION_2": "Valoro invertir tiempo con el cliente para crear una conexion positiva y recabar todos los minimos detalles lo cual facilita el flujo de trabajo y asegurar la máxima eficiencia y satisfacción"
     },
-    "SOLUTION_PAGE_GROUP_2": {
-      "TITLE": "Consulting and Tech Support",
-      "SOLUTION_1": "Tech Consulting",
-      "SOLUTION_2": "Tech Support and Maintenance",
-      "SOLUTION_3": "Business Automation"
+    "ABOUT_2": {
+      "TITLE": "Deportes y tiempo al aire libre",
+      "DESCRIPTION_1": "Cuando no estoy programando, me gusta pasar mi tiempo fuera de casa haciendo deportes o caminar en el parque. Soy muy fan de prácticamente todos los deportes, especialmente lo que usan una raqueta. Valoro mucho la naturaleza y los animales pero no soy particularmente muy apegado a los insectos."
     },
-    "SOLUTION_PAGE_GROUP_3": {
-      "TITLE": "Data and Artificial Intelligence",
-      "SOLUTION_1": "Artificial Intelligence",
-      "SOLUTION_2": "Data Analysis and Big data",
-      "SOLUTION_3": "Cloud Marketing Services"
+    "ABOUT_3": {
+      "TITLE": "Multimedia, video juegos y creatividad.",
+      "DESCRIPTION_1": "La música, la fotografia, el dibujo y el arte en general representan una parte fundamental de mi persona. Estos encienden mi lado creativo lo cual me ayuda a traer ideas frescas e innovadoras a la hora de desarrollar software. Desde joven soy bien fanatico de los video juegos porque siento que me transportan a otro mundo donde puedo hacer explotar mi imaginacion. Mis generos favoritos son los MMO-RPGs, fantasy RGSs, arcades y aventuras."
     }
   },
 
-  "FOOTER": {
-    "SECTION_OUR_PRESENCE": {
-      "TITLE": "Visit us at",
-      "COUNTRY_1": {
-        "COUNTRY": "Paraguay",
-        "ADDRESS_1": "Tte. Jara Troche c/",
-        "ADDRESS_2": "Juan de Salazar y Espinoza",
-        "CITY": "Asuncion"
-      },
-      "COUNTRY_2": {
-        "COUNTRY": "United States",
-        "ADDRESS_1": "123 Main Street",
-        "ADDRESS_2": "Anytown, ST 12345",
-        "CITY": "United States"
-      }
+  "SOLUTION_PAGESET": {
+    "TITLE": "Servicios",
+    "SUBTITLE": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
+    "SOLUTION_PAGE_GROUP_1": {
+      "TITLE": "Desarrollo e Integración de Software",
+      "SOLUTION_1": "Desarrollo de Sitios Web",
+      "SOLUTION_2": "Desarrollo de Aplicaciones Móviles",
+      "SOLUTION_3": "Desarrollo de Software Personalizado",
+      "SOLUTION_4": "Integración de Sistemas",
+      "SOLUTION_5": "Soluciones de Comercio Electrónico"
     },
-    "SECTION_BRAND": "© 2024 Nodica"
+    "SOLUTION_PAGE_GROUP_2": {
+      "TITLE": "Consultoría y Asistencia Tecnológica",
+      "SOLUTION_1": "Consultoría Tecnológica",
+      "SOLUTION_2": "Mantenimiento y Soporte Técnico",
+      "SOLUTION_3": "Automatización de Procesos de Negocio"
+    },
+    "SOLUTION_PAGE_GROUP_3": {
+      "TITLE": "Datos e Inteligencia Artificial",
+      "SOLUTION_1": "Inteligencia Artificial",
+      "SOLUTION_2": "Análisis de Datos y Big Data",
+      "SOLUTION_3": "Servicios de Marketing en la Nube"
+    }
+  },
+
+  "CONTACT_ME": {
+    "TITLE": "Contáctame",
+    "DESCRIPTION": "Cuéntame sobre tu siguiente gran proyecto",
+    "CONTACT_EMAIL": "Email",
+    "CONTACT_WHATSAPP": "WhatsApp"
   },
 
   "ERROR_404": {
-    "TITLE": "Page not found",
-    "BACK_HOMEPAGE_BTN": "Go back to homepage"
+    "TITLE": "Página no encontrada",
+    "BACK_HOMEPAGE_BTN": "Volver a la página de inicio"
   },
 
   "CONTACT_PAGE": {
-    "CONTACT_TITLE_1": "Grow your business",
-    "CONTACT_TITLE_2": "with Nodica!",
-    "CONTACT_DESCRIPTION": "Make the first step and contact us, we promise to give you the best solution to your needs",
+    "CONTACT_TITLE_1": "Contáctame",
+    "CONTACT_TITLE_2": "Cuéntame sobre tus proyectos para poder brindarte la mejor solución",
     "CONTACT_FORM": {
       "SERVICE_TYPE": {
-        "TITLE": "What are you looking for?",
-        "SERVICE_1": "Software Development",
-        "SERVICE_2": "Consulting",
-        "SERVICE_3": "Software Design"
+        "TITLE": "Servicios",
+        "SERVICE_1": "Desarrollo de software",
+        "SERVICE_2": "Diseño UI/UX",
+        "SERVICE_3": "Consultoría",
+        "SERVICE_4": "Creación de contenido"
       },
-      "CLIENT_NAME": "Name",
-      "CLIENT_LASTNAME": "Last Name",
-      "CLIENT_EMAIL": "E-mail",
-      "CLIENT_PHONE": "Phone",
+      "CLIENT_NAME": "Nombre",
+      "CLIENT_LASTNAME": "Apellido",
+      "CLIENT_EMAIL": "tu@email.com",
+      "CLIENT_PHONE": "Teléfono",
       "CLIENT_COUNTRY": {
-        "TITLE": "Country",
+        "COUNTRY_LABEL": "País",
         "COUNTRY_1": "Paraguay",
-        "COUNTRY_2": "United States",
+        "COUNTRY_2": "Estados Unidos",
         "COUNTRY_3": "Argentina",
         "COUNTRY_4": "Brasil",
         "COUNTRY_5": "Chile",
         "COUNTRY_6": "Uruguay",
         "COUNTRY_7": "Ecuador",
         "COUNTRY_8": "Colombia",
-        "COUNTRY_9": "Peru"
+        "COUNTRY_9": "Perú"
       },
-      "FORM_BUTTON_SEND": "Send"
+      "FORM_BUTTON_SEND": "Enviar",
+      "CLIENT_MESSAGE_1": "Mensaje",
+      "CLIENT_MESSAGE_2": "Cuéntame sobre tus proyectos e ideas"
     }
+  },
+
+  "SERVICES_SEC": {
+    "TITLE": "Servicios",
+    "SERVICE_1": {
+      "TITLE": "UI & UX",
+      "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
+    },
+    "SERVICE_2": {
+      "TITLE": "Web & Aplicación Móvil",
+      "DESCRIPTION": "Transformando ideas en experiencias Web y Móvil excepcionales"
+    },
+    "SERVICE_3": {
+      "TITLE": "Diseño & Creatividad",
+      "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
+    },
+    "SERVICE_4": {
+      "TITLE": "Desarrollo",
+      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
+    }
+  },
+
+  "FOOTER_SECTION": {
+    "LINKS_SECTION": "Enlaces",
+    "INFORMATION_SECTION": "Información",
+    "LOCATION": "Asunción, Paraguay"
   }
 }
