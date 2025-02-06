@@ -2,61 +2,60 @@
   "SEO_TITLE_1": "Dany Fischer",
   "SEO_TITLE_2": "Portolio",
   "SEO_TITLE_3": "danfisch.dev@gmail.com",
-  "SEO_DESCRIPTION": "Transformamos ideas en soluciones digitales innovadoras, impulsando el crecimiento de tu negocio con tecnología de vanguardia.",
-  "SEO_TITLE_4": "Contáctame",
+  "SEO_TITLE_4": "Contact me",
   "NAVBAR": {
-    "COPY_EMAIL_BUTTON": "Copiar Email",
+    "COPY_EMAIL_BUTTON": "Copy Email",
     "CV_BUTTON": "CV",
-    "EMAIL_COPY_MESSAGE": "Email copiado al portapapeles!",
-    "SOCIAL": "Encuéntrame en:",
-    "LOGO_ARIA": "Ir a la página principal",
-    "CONTACT_BUTTON": "Contáctanos"
+    "EMAIL_COPY_MESSAGE": "Email copied to clipboard!",
+    "SOCIAL": "Find me:",
+    "LOGO_ARIA": "Go to Homepage",
+    "CONTACT_BUTTON": "Contact me"
   },
 
   "HERO": {
-    "HERO_TITLE_1": "Hola, soy Dany.",
-    "HERO_TITLE_2": "Creando soluciones definitivas con enfasis",
-    "HERO_TITLE_3": "en eficiencia y diseño"
+    "HERO_TITLE_1": "Howdy, I'm Dany.",
+    "HERO_TITLE_2": "Creating definitive solutions with an emphasis ",
+    "HERO_TITLE_3": "on efficiency and design"
   },
 
   "SECTION_TECHNOLOGY": {
-    "TITLE": "Tecnologías",
-    "DESCRIPTION": "Hecha un vistazo a las tecnologías que utilizo para ayudar a mis clientes a construir sus proyectos. Estas herramientas son seleccionadas minuciosamente para asegurar la máxima eficiencia y que se adapten correctamente a cada desafío."
+    "TITLE": "Technologies",
+    "DESCRIPTION": "Take a look at the technologies I use to help my clients build their projects. These tools are carefully selected to ensure maximum efficiency and the best fit for each challenge."
   },
 
   "ABOUT_ME": {
-    "TITLE": "Sobre mí",
+    "TITLE": "About me",
     "ABOUT_1": {
-      "TITLE": "Desarrollador de Software, Analista y Diseñador",
-      "DESCRIPTION_1": "Con más de 6 años de experiencia en desarrollo de sistemas y 3 años endiseño web, me especializo en crear tanto paginas web como aplicaciones móviles.",
-      "DESCRIPTION_2": "Valoro invertir tiempo con el cliente para crear una conexion positiva y recabar todos los minimos detalles lo cual facilita el flujo de trabajo y asegurar la máxima eficiencia y satisfacción"
+      "TITLE": "Software developer, Analyst and Designer",
+      "DESCRIPTION_1": "With over 6 years of experience in software development and 3 years in web design, I specialize in creating both websites and mobile applications.",
+      "DESCRIPTION_2": "I value investing time with the client to create a positive connection and gather all the details, which then facilitates workflow and ensures maximum efficiency and satisfaction"
     },
     "ABOUT_2": {
-      "TITLE": "Deportes y tiempo al aire libre",
-      "DESCRIPTION_1": "Cuando no estoy programando, me gusta pasar mi tiempo fuera de casa haciendo deportes o caminar en el parque. Soy muy fan de prácticamente todos los deportes, especialmente lo que usan una raqueta. Valoro mucho la naturaleza y los animales pero no soy particularmente muy apegado a los insectos."
+      "TITLE": "Sports and outdoor activities",
+      "DESCRIPTION_1": "When I'm not programming, I like to spend my time outdoors playing sports or walking in the park. I'm a big fan of almost all sports, especially those that use a racket. I highly value nature and animals, but I'm not particularly fond of insects."
     },
     "ABOUT_3": {
-      "TITLE": "Multimedia, video juegos y creatividad.",
-      "DESCRIPTION_1": "La música, la fotografia, el dibujo y el arte en general representan una parte fundamental de mi persona. Estos encienden mi lado creativo lo cual me ayuda a traer ideas frescas e innovadoras a la hora de desarrollar software. Desde joven soy bien fanatico de los video juegos porque siento que me transportan a otro mundo donde puedo hacer explotar mi imaginacion. Mis generos favoritos son los MMO-RPGs, fantasy RGSs, arcades y aventuras."
+      "TITLE": "Multimedia, video games and creativity.",
+      "DESCRIPTION_1": "Music, photography, drawing, and art in general represent a fundamental part of who I am. They ignite my creative side, helping me bring fresh and innovative ideas when developing software. Since I was young, I’ve been a big fan of video games because they transport me to another world where I can unleash my imagination. My favorite genres are MMO-RPGs, fantasy RPGs, arcades, and adventure games."
     }
   },
 
   "SOLUTION_PAGESET": {
-    "TITLE": "Servicios",
-    "SUBTITLE": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
+    "TITLE": "Services",
+    "SUBTITLE": "Building solutions that fit your needs perfectly",
     "SOLUTION_PAGE_GROUP_1": {
-      "TITLE": "Desarrollo e Integración de Software",
-      "SOLUTION_1": "Desarrollo de Sitios Web",
-      "SOLUTION_2": "Desarrollo de Aplicaciones Móviles",
-      "SOLUTION_3": "Desarrollo de Software Personalizado",
-      "SOLUTION_4": "Integración de Sistemas",
-      "SOLUTION_5": "Soluciones de Comercio Electrónico"
+      "TITLE": "Software Development and Integration",
+      "SOLUTION_1": "Website Development",
+      "SOLUTION_2": "Mobile Development",
+      "SOLUTION_3": "Custom Software Development",
+      "SOLUTION_4": "System Integration",
+      "SOLUTION_5": "Ecommerce Solutions"
     },
     "SOLUTION_PAGE_GROUP_2": {
-      "TITLE": "Consultoría y Asistencia Tecnológica",
-      "SOLUTION_1": "Consultoría Tecnológica",
-      "SOLUTION_2": "Mantenimiento y Soporte Técnico",
-      "SOLUTION_3": "Automatización de Procesos de Negocio"
+      "TITLE": "Technology Consulting and Assistance",
+      "SOLUTION_1": "Technology Consulting",
+      "SOLUTION_2": "Maintnance and Technical Support",
+      "SOLUTION_3": "Business Logic Automation"
     },
     "SOLUTION_PAGE_GROUP_3": {
       "TITLE": "Datos e Inteligencia Artificial",
@@ -67,8 +66,8 @@
   },
 
   "CONTACT_ME": {
-    "TITLE": "Contáctame",
-    "DESCRIPTION": "Cuéntame sobre tu siguiente gran proyecto",
+    "TITLE": "Contact me",
+    "DESCRIPTION": "Tell me about your next big project",
     "CONTACT_EMAIL": "Email",
     "CONTACT_WHATSAPP": "WhatsApp"
   },
@@ -79,61 +78,165 @@
   },
 
   "CONTACT_PAGE": {
-    "CONTACT_TITLE_1": "Contáctame",
-    "CONTACT_TITLE_2": "Cuéntame sobre tus proyectos para poder brindarte la mejor solución",
+    "CONTACT_TITLE_1": "Contact me ",
+    "CONTACT_TITLE_2": "Tell me about your projects in order to give you the best solutions",
     "CONTACT_FORM": {
       "SERVICE_TYPE": {
-        "TITLE": "Servicios",
-        "SERVICE_1": "Desarrollo de software",
-        "SERVICE_2": "Diseño UI/UX",
-        "SERVICE_3": "Consultoría",
-        "SERVICE_4": "Creación de contenido"
+        "TITLE": "Services",
+        "SERVICE_1": "Software Development",
+        "SERVICE_2": "UI/UX Design",
+        "SERVICE_3": "Consulting",
+        "SERVICE_4": "Content Creation"
       },
-      "CLIENT_NAME": "Nombre",
-      "CLIENT_LASTNAME": "Apellido",
-      "CLIENT_EMAIL": "tu@email.com",
-      "CLIENT_PHONE": "Teléfono",
+      "CLIENT_NAME": "Name",
+      "CLIENT_LASTNAME": "Lastname",
+      "CLIENT_EMAIL": "your@email.com",
+      "CLIENT_PHONE": "Phone",
       "CLIENT_COUNTRY": {
-        "COUNTRY_LABEL": "País",
+        "COUNTRY_LABEL": "Country",
         "COUNTRY_1": "Paraguay",
-        "COUNTRY_2": "Estados Unidos",
+        "COUNTRY_2": "United States",
         "COUNTRY_3": "Argentina",
-        "COUNTRY_4": "Brasil",
+        "COUNTRY_4": "Brazil",
         "COUNTRY_5": "Chile",
         "COUNTRY_6": "Uruguay",
         "COUNTRY_7": "Ecuador",
         "COUNTRY_8": "Colombia",
-        "COUNTRY_9": "Perú"
+        "COUNTRY_9": "Peru"
       },
-      "FORM_BUTTON_SEND": "Enviar",
-      "CLIENT_MESSAGE_1": "Mensaje",
-      "CLIENT_MESSAGE_2": "Cuéntame sobre tus proyectos e ideas"
+      "FORM_BUTTON_SEND": "Send",
+      "CLIENT_MESSAGE_1": "Message",
+      "CLIENT_MESSAGE_2": "Tell me about your projects and ideas"
     }
   },
 
   "SERVICES_SEC": {
-    "TITLE": "Servicios",
+    "TITLE": "Services",
+    "SERVICE_4": {
+      "TITLE": "Development",
+      "DESCRIPTION": "Bringing your vision to life with the latest technology and design trends."
+    },
     "SERVICE_1": {
       "TITLE": "UI & UX",
-      "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
+      "DESCRIPTION": "Designing intuitive, efficient, and user-friendly interfaces."
     },
     "SERVICE_2": {
-      "TITLE": "Web & Aplicación Móvil",
-      "DESCRIPTION": "Transformando ideas en experiencias Web y Móvil excepcionales"
+      "TITLE": "Web & Mobile Application",
+      "DESCRIPTION": "Transforming ideas into exceptional Web and Mobile experiences."
     },
     "SERVICE_3": {
-      "TITLE": "Diseño & Creatividad",
-      "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
-    },
-    "SERVICE_4": {
-      "TITLE": "Desarrollo",
-      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
+      "TITLE": "Design & Creativity",
+      "DESCRIPTION": "Crafting visually stunning designs that connect with your audience."
     }
   },
 
   "FOOTER_SECTION": {
-    "LINKS_SECTION": "Enlaces",
-    "INFORMATION_SECTION": "Información",
-    "LOCATION": "Asunción, Paraguay"
+    "LINKS_SECTION": "Links",
+    "INFORMATION_SECTION": "Information",
+    "LOCATION": "Asuncion, Paraguay"
+  },
+
+  "CV_PAGE": {
+    "OBJECTIVES_SECTION": {
+      "TITLE": "Objectives",
+      "DESCRIPTION": "I currently aim to become a full-stack developer. I began my journey in the web and mobile world in 2021, and I aspire to work at a company with a great team of professionals from whom I can learn and to whom I can contribute my knowledge to achieve goals."
+    },
+
+    "WORK_EXPERIENCE": {
+      "TITLE": "Work Experience",
+      "EXPERIENCE_1": {
+        "TITLE": "Web Designer",
+        "DESCRIPTION": "Nodica Website | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Gathered requirements from clients and discussed the website design.",
+          "DETAIL_2": "Created a mockup and built the website using Astro, Javascript and Tailwind.",
+          "DETAIL_3": "Utilize GitHub for version control."
+        }
+      },
+      "EXPERIENCE_2": {
+        "TITLE": "Web Designer | SEO Specialist",
+        "DESCRIPTION": "TecnoCuentas Blog | Febrero 2021 - Noviembre 2023",
+        "DETAILS": {
+          "DETAIL_1": "Built and maintained website from scratch with Wordpress and MySQL.",
+          "DETAIL_2": "Produced and posted SEO-friendly online content.",
+          "DETAIL_3": "Researched new trends in blogging to create blog posts to be entertaining and engaging."
+        }
+      },
+      "EXPERIENCE_3": {
+        "TITLE": "Software Developer",
+        "DESCRIPTION": "Horizonte S.R.L | Enero 2013 - Diciembre 2019",
+        "DETAILS": {
+          "DETAIL_1": "Modified the existing infrastructure of the financial system to expand its capabilities. Added new features to make the web more interactive and accessible using Genexus, RPG and SQL.",
+          "DETAIL_2": "Favorably supported interdepartmental teams to implement and test new modules to the comprehensive bank system.",
+          "DETAIL_3": "Utilized intensive testing regimen in all environments (development, testing) before going to production."
+        }
+      },
+      "EXPERIENCE_4": {
+        "TITLE": "Public Relations Specialist",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Planned and organized conferences and meeting spaces.",
+          "DETAIL_2": "Provided student recruiting and orientation support at expos to promote the college at various events."
+        }
+      },
+      "EXPERIENCE_5": {
+        "TITLE": "Call Center",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DETAILS": {
+          "DETAIL_1": "Contacted students to provide reminders of upcoming events, assignments, and exams.",
+          "DETAIL_2": "Created and maintained Excel spreadsheet tracking over 500 students a week."
+        }
+      }
+    },
+
+    "EDUCATION": {
+      "TITLE": "Education",
+      "EDUCATION_1": {
+        "DEGREE": "Bacherlor's Degree in Computer Science",
+        "UNIVERSITY": "Universidad Autónoma de Asunción | 2015",
+        "LOCATION": "Asuncion, Paraguay"
+      },
+      "EDUCATION_2": {
+        "DEGREE": "Preschool - Highschool",
+        "UNIVERSITY": "Saint Mary School | 2008",
+        "LOCATION": "Fernando de la Mora, Paraguay"
+      }
+    },
+
+    "CERTIFICATIONS": {
+      "TITLE": "Certifications",
+      "CERTIF_1": "Web Developer Bootcamp - Udemy 2021",
+      "CERTIF_2": "SEO for Wordpress - Udemy 2020",
+      "CERTIF_3": "The Complete Wordpress Development Course - Udemy 2020",
+      "CERTIF_4": "Business Intelligence Basics - Innovaciones Tecnológicas, Paraguay 2018",
+      "CERTIF_5": "Genexus Evo I Basic/Advanced - Soluciones Integrales, Paraguay 2012",
+      "CERTIF_6": "SQL-RPG, RPG-ILE - Softshop, Paraguay 2012"
+    },
+
+    "SKILLSET": {
+      "TITLE": "Technical Skillset",
+      "SKILL_1": "HTML",
+      "SKILL_2": "CSS",
+      "SKILL_3": "JAVASCRIPT",
+      "SKILL_4": "WORDPRESS",
+      "SKILL_5": "NODE",
+      "SKILL_6": "REACT",
+      "SKILL_7": "REACT NATIVE",
+      "SKILL_8": "BOOTSTRAP",
+      "SKILL_9": "JAVA",
+      "SKILL_10": "SQL",
+      "SKILL_11": "RPG",
+      "SKILL_12": "GIT",
+      "SKILL_13": "GENEXUS",
+      "SKILL_14": "WINDOWS",
+      "SKILL_15": "LINUX",
+      "SKILL_16": "MACOS"
+    },
+    "LANGUAGES": {
+      "TITLE": "Languages",
+      "LANGUAGE_1": "Spanish: Native.",
+      "LANGUAGE_2": "English: Advanced.",
+      "LANGUAGE_3": "German: Basic."
+    }
   }
 }

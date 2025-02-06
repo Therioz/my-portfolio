@@ -2,7 +2,6 @@
   "SEO_TITLE_1": "Dany Fischer",
   "SEO_TITLE_2": "Portolio",
   "SEO_TITLE_3": "danfisch.dev@gmail.com",
-  "SEO_DESCRIPTION": "Transformamos ideas en soluciones digitales innovadoras, impulsando el crecimiento de tu negocio con tecnología de vanguardia.",
   "SEO_TITLE_4": "Contáctame",
   "NAVBAR": {
     "COPY_EMAIL_BUTTON": "Copiar Email",
@@ -43,7 +42,7 @@
 
   "SOLUTION_PAGESET": {
     "TITLE": "Servicios",
-    "SUBTITLE": "Te brindamos soluciones que se ajustan exactamente a tus necesidades",
+    "SUBTITLE": "Construyendo solucione que se ajustan exactamente a tus necesidades",
     "SOLUTION_PAGE_GROUP_1": {
       "TITLE": "Desarrollo e Integración de Software",
       "SOLUTION_1": "Desarrollo de Sitios Web",
@@ -113,6 +112,10 @@
 
   "SERVICES_SEC": {
     "TITLE": "Servicios",
+    "SERVICE_4": {
+      "TITLE": "Desarrollo",
+      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
+    },
     "SERVICE_1": {
       "TITLE": "UI & UX",
       "DESCRIPTION": "Diseñando interfaces intuitivas, enficientes y amigables"
@@ -124,10 +127,6 @@
     "SERVICE_3": {
       "TITLE": "Diseño & Creatividad",
       "DESCRIPTION": "Construyendo diseños atractivos que conectan con tu audiencia"
-    },
-    "SERVICE_4": {
-      "TITLE": "Desarrollo",
-      "DESCRIPTION": "Convietiendo tu vision en realidad con tecnología y diseño de punta"
     }
   },
 
@@ -176,16 +175,16 @@
         "TITLE": "Encargado en Relaciones Publicas",
         "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
         "DETAILS": {
-          "DETAIL_1": "Planned and organized conferences and meeting spaces.",
-          "DETAIL_2": "Provided student recruiting and orientation support at expos to promote the college at various events."
+          "DETAIL_1": "Planificación y organización de eventos y conferencias.",
+          "DETAIL_2": "Reclutamiento y orientación de estudiantes en exposiciones para promover la universidad en diversos eventos"
         }
       },
       "EXPERIENCE_5": {
         "TITLE": "Call Center",
         "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
         "DETAILS": {
-          "DETAIL_1": "Contacted students to provide reminders of upcoming events, assignments, and exams.",
-          "DETAIL_2": "Created and maintained Excel spreadsheet tracking over 500 students a week."
+          "DETAIL_1": "Contactar estudiantes para recordarles de tareas, exámenes y eventos futuros.",
+          "DETAIL_2": "Administración de planilla excel gestionando al rededor de 500 alumnos a la semana"
         }
       }
     },
