@@ -1,0 +1,32 @@
+---
+import TechSlider from "@components/TechSlider.astro";
+import Hero from "@components/Hero.astro";
+import Services from "@components/Services.astro";
+import Layout from "@layouts/Layout.astro";
+import About from "@components/About.astro";
+import Contactme from "@components/Contactme.astro";
+
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout title="Dany Fischer - Portfolio">
+  <main>
+    <Hero />
+    <Services />
+    <About />
+    <TechSlider />
+    <Contactme />
+  </main>
+</Layout>

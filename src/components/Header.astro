@@ -110,22 +110,44 @@ const translatePath = useTranslatedPath(lang);
         </button>
       </div>
 
-      <!-- Language selector toggle START -->
+      <div class="flex gap-5">
+        <!-- Language selector toggle START -->
+        <label class="flex items-center cursor-pointer">
+          <input type="checkbox" value="" class="sr-only peer" />
+          <div class="h-6 w-6 overflow-hidden rounded-full border shadow-sm">
+            <img
+              src="https://flagcdn.com/w40/es.png"
+              alt="Spanish"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            class="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600"
+          >
+          </div>
+          <div class="h-6 w-6 overflow-hidden rounded-full border shadow-sm">
+            <img
+              src="https://flagcdn.com/w40/gb.png"
+              alt="English"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </label>
+        <!-- Language selector toggle END -->
 
-      <!-- Language selector toggle END -->
-
-      <!-- Hamburger dropdown menu START -->
-      <div
-        id="menu-div"
-        class="px-7 pb-3 pt-4 border-black border-2 rounded-full"
-      >
-        <button id="menu-toggle" class="menu-btn">
-          <div class="line line1 bg-black"></div>
-          <div class="line line2 bg-black"></div>
-          <div class="line line3 bg-black"></div>
-        </button>
+        <!-- Hamburger dropdown menu START -->
+        <div
+          id="menu-div"
+          class="px-7 pb-3 pt-4 border-black border-2 rounded-full"
+        >
+          <button id="menu-toggle" class="menu-btn">
+            <div class="line line1 bg-black"></div>
+            <div class="line line2 bg-black"></div>
+            <div class="line line3 bg-black"></div>
+          </button>
+        </div>
+        <!-- Hamburger dropdown menu END -->
       </div>
-      <!-- Hamburger dropdown menu END -->
     </div>
     <!-- DESKTOP NAV END -->
   </nav>

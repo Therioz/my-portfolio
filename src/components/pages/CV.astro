@@ -1,0 +1,291 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import { getI18N } from "@src/i18n/index";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title=`${i18n.NAVBAR.CV_BUTTON} | ${i18n.SEO_TITLE_1}`>
+  <section
+    class="bg-[url('/src/lib/bg-light-grainy.webp')] py-24 px-4 sm:px-6 lg:px-8"
+  >
+    <div class="container mx-auto max-w-4xl">
+      <main>
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.OBJECTIVES_SECTION.TITLE}
+          </h2>
+          <p class="text-gray-600">
+            {i18n.CV_PAGE.OBJECTIVES_SECTION.DESCRIPTION}
+          </p>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.WORK_EXPERIENCE.TITLE}
+          </h2>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.TITLE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DESCRIPTION}
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_1}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_2}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_3}
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.TITLE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DESCRIPTION}
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_1}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_2}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_3}
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.TITLE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DESCRIPTION}
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_1}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_2}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_3}
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.TITLE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DESCRIPTION}
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_1}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_2}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.TITLE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DESCRIPTION}
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-2">
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_1}
+              </li>
+              <li>
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_2}
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.EDUCATION.TITLE}
+          </h2>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_1.DEGREE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_1.UNIVERSITY}
+            </p>
+            <p class="text-gray-600">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_1.LOCATION}
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_2.DEGREE}
+            </h3>
+            <p class="text-gray-600 italic">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_2.UNIVERSITY}
+            </p>
+            <p class="text-gray-600">
+              {i18n.CV_PAGE.EDUCATION.EDUCATION_2.LOCATION}
+            </p>
+          </div>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.CERTIFICATIONS.TITLE}
+          </h2>
+
+          <ul class="list-disc list-inside text-gray-600 mt-2">
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_1}
+            </li>
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_2}
+            </li>
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_3}
+            </li>
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_4}
+            </li>
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_5}
+            </li>
+            <li>
+              {i18n.CV_PAGE.CERTIFICATIONS.CERTIF_6}
+            </li>
+          </ul>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.SKILLSET.TITLE}
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_1}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_2}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_3}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_4}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_5}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_6}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_7}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_8}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_9}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_10}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_11}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_12}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_13}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_14}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_15}
+            </span>
+            <span
+              class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm"
+            >
+              {i18n.CV_PAGE.SKILLSET.SKILL_16}
+            </span>
+          </div>
+        </section>
+
+        <section class="bg-white shadow rounded-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            {i18n.CV_PAGE.LANGUAGES.TITLE}
+          </h2>
+
+          <ul class="list-disc list-inside text-gray-600 mt-2">
+            <li>
+              {i18n.CV_PAGE.LANGUAGES.LANGUAGE_1}
+            </li>
+            <li>
+              {i18n.CV_PAGE.LANGUAGES.LANGUAGE_2}
+            </li>
+            <li>
+              {i18n.CV_PAGE.LANGUAGES.LANGUAGE_3}
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </section>
+</Layout>
