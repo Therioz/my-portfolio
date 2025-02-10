@@ -20,8 +20,8 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      host: "smtp.gmail.com",
+      service: process.env.SMTP_SERVICE,
+      host: process.env.SMTP_EMAIL,
       port: 465,
       secure: true,
       auth: {
@@ -42,8 +42,8 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const mailOptions = {
-      from: process.env.EMAIL,
-      to: data.email,
+      from: data.email,
+      to: process.env.EMAIL,
       subject: `New Contact Form Submission from ${data.name}`,
       text: `
 New Contact Form Submission
