@@ -2,11 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 
 import { getI18N } from "@src/i18n/index";
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "@src/i18n/utils";
+import { getLangFromUrl } from "@src/i18n/utils";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -18,112 +14,115 @@ const lang = getLangFromUrl(Astro.url);
   <section
     class="bg-[url('/src/lib/bg-light-grainy.webp')] py-24 px-4 sm:px-6 lg:px-8"
   >
-    <div class="container mx-auto max-w-4xl">
-      <main>
-        <section class="bg-white shadow rounded-lg p-6 mb-8">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4">
-            {i18n.CV_PAGE.OBJECTIVES_SECTION.TITLE}
-          </h2>
-          <p class="text-gray-600">
-            {i18n.CV_PAGE.OBJECTIVES_SECTION.DESCRIPTION}
-          </p>
-        </section>
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="md:ml-auto md:max-w-3xl max-w-4xl ml-0">
+        <main>
+          <section class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              {i18n.CV_PAGE.OBJECTIVES_SECTION.TITLE}
+            </h2>
+            <p class="text-gray-600">
+              {i18n.CV_PAGE.OBJECTIVES_SECTION.DESCRIPTION}
+            </p>
+          </section>
 
-        <section class="bg-white shadow rounded-lg p-6 mb-8">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4">
-            {i18n.CV_PAGE.WORK_EXPERIENCE.TITLE}
-          </h2>
-          <div class="mb-6">
-            <h3 class="text-xl font-semibold text-gray-800">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.TITLE}
-            </h3>
-            <p class="text-gray-600 italic">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DESCRIPTION}
-            </p>
-            <ul class="list-disc list-inside text-gray-600 mt-2">
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_1}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_2}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_3}
-              </li>
-            </ul>
-          </div>
-          <div class="mb-6">
-            <h3 class="text-xl font-semibold text-gray-800">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.TITLE}
-            </h3>
-            <p class="text-gray-600 italic">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DESCRIPTION}
-            </p>
-            <ul class="list-disc list-inside text-gray-600 mt-2">
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_1}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_2}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_3}
-              </li>
-            </ul>
-          </div>
-          <div class="mb-6">
-            <h3 class="text-xl font-semibold text-gray-800">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.TITLE}
-            </h3>
-            <p class="text-gray-600 italic">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DESCRIPTION}
-            </p>
-            <ul class="list-disc list-inside text-gray-600 mt-2">
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_1}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_2}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_3}
-              </li>
-            </ul>
-          </div>
-          <div class="mb-6">
-            <h3 class="text-xl font-semibold text-gray-800">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.TITLE}
-            </h3>
-            <p class="text-gray-600 italic">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DESCRIPTION}
-            </p>
-            <ul class="list-disc list-inside text-gray-600 mt-2">
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_1}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_2}
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.TITLE}
-            </h3>
-            <p class="text-gray-600 italic">
-              {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DESCRIPTION}
-            </p>
-            <ul class="list-disc list-inside text-gray-600 mt-2">
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_1}
-              </li>
-              <li>
-                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_2}
-              </li>
-            </ul>
-          </div>
-        </section>
-
+          <section class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              {i18n.CV_PAGE.WORK_EXPERIENCE.TITLE}
+            </h2>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.TITLE}
+              </h3>
+              <p class="text-gray-600 italic">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DESCRIPTION}
+              </p>
+              <ul class="list-disc list-inside text-gray-600 mt-2">
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_1}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_2}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_1.DETAILS.DETAIL_3}
+                </li>
+              </ul>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.TITLE}
+              </h3>
+              <p class="text-gray-600 italic">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DESCRIPTION}
+              </p>
+              <ul class="list-disc list-inside text-gray-600 mt-2">
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_1}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_2}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_2.DETAILS.DETAIL_3}
+                </li>
+              </ul>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.TITLE}
+              </h3>
+              <p class="text-gray-600 italic">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DESCRIPTION}
+              </p>
+              <ul class="list-disc list-inside text-gray-600 mt-2">
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_1}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_2}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_3.DETAILS.DETAIL_3}
+                </li>
+              </ul>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.TITLE}
+              </h3>
+              <p class="text-gray-600 italic">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DESCRIPTION}
+              </p>
+              <ul class="list-disc list-inside text-gray-600 mt-2">
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_1}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_4.DETAILS.DETAIL_2}
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.TITLE}
+              </h3>
+              <p class="text-gray-600 italic">
+                {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DESCRIPTION}
+              </p>
+              <ul class="list-disc list-inside text-gray-600 mt-2">
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_1}
+                </li>
+                <li>
+                  {i18n.CV_PAGE.WORK_EXPERIENCE.EXPERIENCE_5.DETAILS.DETAIL_2}
+                </li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="md:mr-auto md:max-w-xs mr-0 max-w-4xl">
         <section class="bg-white shadow rounded-lg p-6 mb-8">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">
             {i18n.CV_PAGE.EDUCATION.TITLE}
@@ -285,7 +284,7 @@ const lang = getLangFromUrl(Astro.url);
             </li>
           </ul>
         </section>
-      </main>
+      </div>
     </div>
   </section>
 </Layout>
