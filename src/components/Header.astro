@@ -18,7 +18,7 @@ const translatePath = useTranslatedPath(lang);
 
 <header
   id="header"
-  class="bg-[url('/src/lib/bg-dark-grainy.webp')] top-0 z-50 relative"
+  class="bg-[url('/lib/bg-dark-grainy.webp')] top-0 z-50 relative"
 >
   <nav
     id="nav"
@@ -43,7 +43,7 @@ const translatePath = useTranslatedPath(lang);
               <span class="ml-4 text-2xl text-gray-500">(01)</span>
             </a>
             <svg class="feather">
-              <use href="../../feather-sprite.svg#arrow-up-right"></use>
+              <use href="/lib/feather-sprite.svg#arrow-up-right"></use>
             </svg>
           </div>
           <div
@@ -57,7 +57,7 @@ const translatePath = useTranslatedPath(lang);
               <span class="ml-4 text-2xl text-gray-500">(02)</span>
             </a>
             <svg class="feather">
-              <use href="../../feather-sprite.svg#arrow-up-right"></use>
+              <use href="/lib/feather-sprite.svg#arrow-up-right"></use>
             </svg>
           </div>
         </div>
@@ -74,7 +74,7 @@ const translatePath = useTranslatedPath(lang);
                 class="rounded-md px-3 py-2 text-md font-medium text-gray-600 hover:text-gray-400 transition-colors"
               >
                 <svg class="feather">
-                  <use href="../../feather-sprite.svg#github"></use>
+                  <use href="/lib/feather-sprite.svg#github"></use>
                 </svg>
               </a>
               <a
@@ -83,7 +83,7 @@ const translatePath = useTranslatedPath(lang);
                 class="rounded-md px-3 py-2 text-md font-medium text-gray-600 hover:text-gray-400 transition-colors"
               >
                 <svg class="feather">
-                  <use href="../../feather-sprite.svg#linkedin"></use>
+                  <use href="/lib/feather-sprite.svg#linkedin"></use>
                 </svg></a
               >
             </div>
@@ -142,7 +142,7 @@ const translatePath = useTranslatedPath(lang);
     class="text-white bg-gray-800 px-8 py-4 rounded-full flex justify-evenly gap-2 items-center"
   >
     <svg class="feather">
-      <use href="../../feather-sprite.svg#check-circle"></use>
+      <use href="/lib/feather-sprite.svg#check-circle"></use>
     </svg>
     {i18n.NAVBAR.EMAIL_COPY_MESSAGE}
   </p>
@@ -217,7 +217,7 @@ const translatePath = useTranslatedPath(lang);
         menu?.classList.toggle("active");
         menu?.classList.toggle("hidden");
         button?.classList.toggle("open");
-        header?.classList.toggle("bg-[url('/src/lib/bg-dark-grainy.webp')]");
+        header?.classList.toggle("bg-[url('/lib/bg-dark-grainy.webp')]");
         header?.classList.toggle("bg-black");
         nav?.classList.toggle("border-b-2");
         nav?.classList.toggle("border-b-white");
@@ -233,7 +233,7 @@ const translatePath = useTranslatedPath(lang);
     if (menu && !menu.classList.contains("hidden")) {
       menu.classList.add("hidden");
       button?.classList.remove("open");
-      header?.classList.toggle("bg-[url('/src/lib/bg-dark-grainy.webp')]");
+      header?.classList.toggle("bg-[url('/lib/bg-dark-grainy.webp')]");
       header?.classList.remove("bg-black");
       nav?.classList.toggle("border-b-2");
       nav?.classList.toggle("border-b-white");

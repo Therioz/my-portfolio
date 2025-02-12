@@ -13,7 +13,7 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <div
-  class="relative z-10 bg-[url('/src/lib/bg-dark-grainy.webp')] w-full py-12 md:py-24 flex items-center justify-center md:rounded-t-[124px] rounded-t-[80px] sm:-mt-24 -mt-10"
+  class="relative z-10 bg-[url('/lib/bg-dark-grainy.webp')] w-full py-12 md:py-24 flex items-center justify-center md:rounded-t-[124px] rounded-t-[80px] sm:-mt-24 -mt-10"
 >
   <div class="container px-4 md:px-6 mx-auto max-w-7xl py-16">
     <div class="relative flex justify-center items-center mb-16">
@@ -30,7 +30,7 @@ const lang = getLangFromUrl(Astro.url);
         <img
           width="200px"
           height="200px"
-          src="/src/lib/hands.webp"
+          src="/lib/hands.webp"
           alt="Contact shaking hands icon"
         />
       </div>
@@ -45,7 +45,7 @@ const lang = getLangFromUrl(Astro.url);
           <span> {i18n.CONTACT_ME.CONTACT_EMAIL} </span>
 
           <svg class="feather">
-            <use href="../../feather-sprite.svg#mail"></use>
+            <use href="/lib/feather-sprite.svg#mail"></use>
           </svg>
         </button>
         <button
@@ -57,7 +57,7 @@ const lang = getLangFromUrl(Astro.url);
           </span>
 
           <svg class="feather">
-            <use href="../../feather-sprite.svg#arrow-right"></use>
+            <use href="/lib/feather-sprite.svg#arrow-right"></use>
           </svg>
         </button>
       </div>
