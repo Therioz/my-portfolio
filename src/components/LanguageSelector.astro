@@ -1,4 +1,6 @@
 ---
+import ChevronIcon from "../components/Chevron.astro";
+
 import { LANGUAGES } from "../i18n/ui";
 import {
   getRouteFromUrl,
@@ -16,105 +18,32 @@ const otherLocales = Object.values(LANGUAGES).filter(
 );
 ---
 
-<label class="flex items-center cursor-pointer">
-  <input type="checkbox" value="" class="sr-only peer" />
-  <div class="h-6 w-6 overflow-hidden rounded-full border shadow-sm">
-    <img
-      src="https://flagcdn.com/w40/es.png"
-      alt="Spanish"
-      class="h-full w-full object-cover"
-    />
-  </div>
-  <div
-    class="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600"
-  >
-  </div>
-  <div class="h-6 w-6 overflow-hidden rounded-full border shadow-sm">
-    <img
-      src="https://flagcdn.com/w40/gb.png"
-      alt="English"
-      class="h-full w-full object-cover"
-    />
-  </div>
-</label>
-
-<!-- OLD SWITCH -->
-<div class="flex items-center gap-2">
-  <span class="text-sm font-medium language-label" data-language="es">
-    <currentLocaleData.flag />
-  </span>
+<div class="group text-black rounded-md transition-all duration-300">
   <button
-    id="language-toggle"
-    role="switch"
-    aria-checked="true"
-    class="group relative inline-flex h-6 w-11 items-center rounded-full bg-muted transition-colors hover:bg-muted/70"
+    type="button"
+    class="group inline-flex justify-start items-center w-full gap-x-2 px-2 py-1"
+    aria-expanded="true"
+    aria-haspopup="true"
   >
-    <span class="sr-only">Toggle language</span>
-    <span
-      class="pointer-events-none block h-5 w-5 translate-x-0.5 rounded-full bg-white shadow-lg ring-0 transition-transform duration-200"
-      id="toggle-thumb"></span>
+    <currentLocaleData.flag />
+    {currentLocaleData.name}
+    <ChevronIcon size={20} orientation="down" color="black" />
   </button>
-  <span class="text-sm font-medium language-label" data-language="en">
+  <ul
+    class="group-hover:block group-hover:duration-300 hidden pt-1 absolute group-hover:animate-fade-in md:group-hover:animate-duration-300"
+  >
     {
       otherLocales.map((locale) => (
         <li class="py-[2px]">
           <a
-            class="rounded-md bg-white whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2 border border-gray-500/30 duration-300"
+            class="rounded-md bg-white whitespace-no-wrap inline-flex justify-start items-center gap-x-2 px-5 py-2 border border-gray-500/30 duration-300"
             href={translatePath(`/${route ? route : ""}`, locale.code)}
           >
             <locale.flag />
+            {locale.name}
           </a>
         </li>
       ))
     }
-  </span>
+  </ul>
 </div>
-
-<script>
-  // Initialize the toggle button and its state
-  const toggleButton = document.getElementById("language-toggle");
-  const toggleThumb = document.getElementById("toggle-thumb");
-  const languageLabels = document.querySelectorAll(".language-label");
-
-  // Set initial state
-  let isSpanish = true;
-  updateToggleState();
-
-  // Add click event listener
-  toggleButton?.addEventListener("click", () => {
-    isSpanish = !isSpanish;
-    updateToggleState();
-  });
-
-  function updateToggleState() {
-    // Update button states
-    toggleButton?.setAttribute("aria-checked", String(isSpanish));
-    toggleButton?.classList.toggle("bg-primary", isSpanish);
-    toggleButton?.classList.toggle("bg-muted", !isSpanish);
-
-    // Update thumb position
-    toggleThumb?.classList.toggle("translate-x-[22px]", isSpanish);
-    toggleThumb?.classList.toggle("translate-x-0.5", !isSpanish);
-
-    // Update label colors
-    languageLabels.forEach((label) => {
-      const language = label.getAttribute("data-language");
-      if (language === "es") {
-        label.classList.toggle("text-primary", isSpanish);
-        label.classList.toggle("text-muted-foreground", !isSpanish);
-      } else {
-        label.classList.toggle("text-primary", !isSpanish);
-        label.classList.toggle("text-muted-foreground", isSpanish);
-      }
-    });
-  }
-</script>
-
-<style>
-  /* Optional: Add any additional styles here */
-  .transition-transform {
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-  }
-</style>
