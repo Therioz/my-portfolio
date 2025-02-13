@@ -8,12 +8,17 @@ import {
   useTranslatedPath,
 } from "@src/i18n/utils";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const reCaptchaKey = process.env.GOOGLE_RECAPTCHA_KEY;
 ---
 
 <Layout title=`${i18n.SEO_TITLE_4} | ${i18n.SEO_TITLE_1}`>
@@ -192,7 +197,12 @@ const translatePath = useTranslatedPath(lang);
             </div>
           </div>
 
+          <!-- SUBMIT BUTTON -->
           <div>
+            <!-- GOOGLE RECAPTCHA -->
+            <div class="w-full flex justify-center">
+              <div class="g-recaptcha" data-sitekey={reCaptchaKey}></div>
+            </div>
             <button
               id="submitButton"
               type="submit"
@@ -203,6 +213,7 @@ const translatePath = useTranslatedPath(lang);
           </div>
         </div>
 
+        <!-- CUSTOM ALERT MESSAGE CONTAINER -->
         <div
           id="customAlert"
           class="fixed top-4 right-4 max-w-sm w-full transform transition-all duration-300 translate-x-full"
@@ -234,6 +245,9 @@ const translatePath = useTranslatedPath(lang);
       </form>
     </div>
   </section>
+
+  <script is:inline src="https://www.google.com/recaptcha/api.js" async defer
+  ></script>
 
   <script is:inline>
     const form = document.getElementById("contactForm");
@@ -291,6 +305,14 @@ const translatePath = useTranslatedPath(lang);
     form?.addEventListener("submit", async (e) => {
       e.preventDefault();
 
+      // Get the reCAPTCHA response
+      const recaptchaResponse = grecaptcha.getResponse();
+
+      if (!recaptchaResponse) {
+        showAlert("Please complete the reCAPTCHA verification", true);
+        return;
+      }
+
       submitButton.disabled = true;
 
       const formData = {
@@ -316,6 +338,7 @@ const translatePath = useTranslatedPath(lang);
 
         showAlert("Message sent successfully! We'll contact you soon.", false);
         form.reset();
+        grecaptcha.reset(); // Reset reCAPTCHA
       } catch (error) {
         console.error("Error:", error);
         showAlert("An error occurred while sending the message.", true);
