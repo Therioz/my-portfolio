@@ -63,7 +63,7 @@ const translatePath = useTranslatedPath(lang);
         </div>
 
         {/* Footer */}
-        <div class="mt-auto flex flex-col gap-8 md:pt-10 pt-5">
+        <div class="mt-auto flex flex-col gap-8 md:pt-10 pt-5 md:hidden">
           {/* Social Links */}
           <div class="space-y-4">
             <h3 class="text-lg text-gray-500">{i18n.NAVBAR.SOCIAL}</h3>
@@ -96,20 +96,42 @@ const translatePath = useTranslatedPath(lang);
     <!-- DESKTOP NAV START -->
     <div class="flex flex-1 items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <a id="email" class="font-bold text-lg" href="/">{i18n.SEO_TITLE_3}</a>
-        <button
+        <a id="email" class="font-bold text-3xl hover:text-gray-500" href="/"
+          >{i18n.SEO_TITLE_1}</a
+        >
+        <!-- <button
           id="copy-button"
           class="px-7 py-3 text-md text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
           {i18n.NAVBAR.COPY_EMAIL_BUTTON}
-        </button>
+        </button> -->
         <button
-          class="px-9 py-3 text-md text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
+          class="px-9 py-3 text-xl text-gray-800 bg-white border rounded-full hover:bg-gray-100 transition-colors md:block hidden font-bold"
         >
           <a href={translatePath("/cv")}>
             {i18n.NAVBAR.CV_BUTTON}
           </a>
         </button>
+        <div class="bg-white border rounded-full px-3 py-1 hidden md:flex">
+          <a
+            href="https://github.com/Therioz"
+            target="_blank"
+            class="px-3 py-2 text-md font-medium text-gray-800 hover:text-gray-500 transition-colors"
+          >
+            <svg class="feather">
+              <use href="/lib/feather-sprite.svg#github"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dany-fischer-ab9741235/"
+            target="_blank"
+            class="px-3 py-2 text-md font-medium text-gray-800 hover:text-gray-500 transition-colors"
+          >
+            <svg class="feather">
+              <use href="/lib/feather-sprite.svg#linkedin"></use>
+            </svg></a
+          >
+        </div>
       </div>
 
       <div class="flex gap-5">

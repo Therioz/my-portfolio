@@ -139,7 +139,7 @@
   "CV_PAGE": {
     "OBJECTIVES_SECTION": {
       "TITLE": "Objetivos",
-      "DESCRIPTION": "Actualmente tengo el objetivo de ser un desarrollador full stack. Inicie mi camino en el mundo web/mobile en el 2021 y deseo trabajar en una empresa con un buen equipo de profesionales de los cuales aprender y aportar mis conocimientos para lograr metas."
+      "DESCRIPTION": "Actualmente tengo como objetivo ser un desarrollador full stack. Inicie en el mundo web en el 2021 creando páginas y aplicaciones móviles tanto para clientes como para uso personal. Deseo trabajar para una empresa positiva donde aprender y aportar mis conocimientos para lograr objetivos."
     },
 
     "WORK_EXPERIENCE": {
@@ -173,7 +173,7 @@
       },
       "EXPERIENCE_4": {
         "TITLE": "Encargado en Relaciones Publicas",
-        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Julio 2012 - Diciembre 2012",
         "DETAILS": {
           "DETAIL_1": "Planificación y organización de eventos y conferencias.",
           "DETAIL_2": "Reclutamiento y orientación de estudiantes en exposiciones para promover la universidad en diversos eventos"
@@ -181,10 +181,10 @@
       },
       "EXPERIENCE_5": {
         "TITLE": "Call Center",
-        "DESCRIPTION": "Universidad Autónoma de Asunción | Noviembre 2024 - Diciembre 2024",
+        "DESCRIPTION": "Universidad Autónoma de Asunción | Julio 2011 - Junio 2012",
         "DETAILS": {
           "DETAIL_1": "Contactar estudiantes para recordarles de tareas, exámenes y eventos futuros.",
-          "DETAIL_2": "Administración de planilla excel gestionando al rededor de 500 alumnos a la semana"
+          "DETAIL_2": "Administración de planilla excel gestionando al rededor de 200 alumnos a la semana"
         }
       }
     },
