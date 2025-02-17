@@ -27,7 +27,7 @@ const translatePath = useTranslatedPath(lang);
     <!-- MOBILE NAV -->
     <nav
       id="mobile-menu"
-      class="mob-menu hidden bg-black p-8 text-white absolute top-[100%] left-0 right-0 overflow-hidden"
+      class="mob-menu bg-black p-8 text-white absolute top-[100%] left-0 right-0 overflow-hidden"
     >
       <div class="mx-auto max-w-6xl">
         {/* Main Menu */}
@@ -171,13 +171,18 @@ const translatePath = useTranslatedPath(lang);
 </div>
 
 <style>
-  .mob-menu {
-    transform: translateY(-100%);
+  #mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
   }
 
-  .mob-menu.active {
-    transform: translateY(0px);
-    transition: transform 0.3s linear;
+  #mobile-menu.open {
+    max-height: 1000px;
+    opacity: 1;
   }
 
   .menu-btn {
@@ -232,31 +237,28 @@ const translatePath = useTranslatedPath(lang);
   const nav = document.getElementById("nav");
   const burgerLines = document.querySelectorAll(".line");
 
-  document
-    .getElementById("menu-toggle")
-    ?.addEventListener("click", function () {
-      if (menu) {
-        menu?.classList.toggle("active");
-        menu?.classList.toggle("hidden");
-        button?.classList.toggle("open");
-        header?.classList.toggle("bg-[url('/lib/bg-dark-grainy.webp')]");
-        header?.classList.toggle("bg-black");
-        nav?.classList.toggle("border-b-2");
-        nav?.classList.toggle("border-b-white");
-        email?.classList.toggle("text-white");
-        buttonDiv?.classList.toggle("border-white");
-        burgerLines.forEach((line) => {
-          line.classList.toggle("bg-white");
-        });
-      }
-    });
+  button?.addEventListener("click", function () {
+    if (menu) {
+      menu?.classList.toggle("open");
+      button?.classList.toggle("open");
+      header?.classList.toggle("bg-[url('/lib/bg-dark-grainy.webp')]");
+      header?.classList.toggle("bg-black");
+      nav?.classList.toggle("border-b-2");
+      nav?.classList.toggle("border-b-white");
+      email?.classList.toggle("text-white");
+      buttonDiv?.classList.toggle("border-white");
+      burgerLines.forEach((line) => {
+        line.classList.toggle("bg-white");
+      });
+    }
+  });
 
   document.addEventListener("scroll", () => {
-    if (menu && !menu.classList.contains("hidden")) {
-      menu.classList.add("hidden");
-      button?.classList.remove("open");
+    if (menu && menu.classList.contains("open")) {
+      menu?.classList.remove("open");
+      button?.classList.toggle("open");
       header?.classList.toggle("bg-[url('/lib/bg-dark-grainy.webp')]");
-      header?.classList.remove("bg-black");
+      header?.classList.toggle("bg-black");
       nav?.classList.toggle("border-b-2");
       nav?.classList.toggle("border-b-white");
       email?.classList.toggle("text-white");
