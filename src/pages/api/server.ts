@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const data = await request.json();
 
-    const requiredFields = ["name", "lastname", "email"];
+    const requiredFields = ["name", "lastname", "email", "service"];
     for (const field of requiredFields) {
       if (!data[field]) {
         return new Response(

@@ -27,7 +27,7 @@ const translatePath = useTranslatedPath(lang);
     <!-- MOBILE NAV -->
     <nav
       id="mobile-menu"
-      class="mob-menu bg-black p-8 text-white absolute top-[100%] left-0 right-0 overflow-hidden"
+      class="mob-menu bg-black p-8 text-white absolute top-[100%] left-0 right-0"
     >
       <div class="mx-auto max-w-6xl">
         {/* Main Menu */}
@@ -96,8 +96,10 @@ const translatePath = useTranslatedPath(lang);
     <!-- DESKTOP NAV START -->
     <div class="flex flex-1 items-center justify-between gap-3">
       <div class="flex items-center gap-3">
-        <a id="email" class="font-bold text-3xl hover:text-gray-500" href="/"
-          >{i18n.SEO_TITLE_1}</a
+        <a
+          id="email"
+          class="font-bold text-3xl hover:text-gray-500 pl-3"
+          href="/">{i18n.SEO_TITLE_1}</a
         >
         <!-- <button
           id="copy-button"
@@ -176,8 +178,8 @@ const translatePath = useTranslatedPath(lang);
     opacity: 0;
     overflow: hidden;
     transition:
-      max-height 0.5s ease-in-out,
-      opacity 0.5s ease-in-out;
+      max-height 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
   }
 
   #mobile-menu.open {

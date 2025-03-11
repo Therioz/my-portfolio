@@ -83,6 +83,7 @@
     "CONTACT_FORM": {
       "SERVICE_TYPE": {
         "TITLE": "Services",
+        "SERVICE_0": "Select your service",
         "SERVICE_1": "Software Development",
         "SERVICE_2": "UI/UX Design",
         "SERVICE_3": "Consulting",
@@ -92,19 +93,7 @@
       "CLIENT_LASTNAME": "Lastname",
       "CLIENT_EMAIL": "your@email.com",
       "CLIENT_PHONE": "Phone",
-      "CLIENT_COUNTRY": {
-        "COUNTRY_LABEL": "Country",
-        "COUNTRY_1": "Paraguay",
-        "COUNTRY_2": "United States",
-        "COUNTRY_3": "Argentina",
-        "COUNTRY_4": "Brazil",
-        "COUNTRY_5": "Chile",
-        "COUNTRY_6": "Uruguay",
-        "COUNTRY_7": "Ecuador",
-        "COUNTRY_8": "Colombia",
-        "COUNTRY_9": "Peru"
-      },
-      "FORM_BUTTON_SEND": "Send",
+      "FORM_BUTTON_SEND": "Send Message",
       "CLIENT_MESSAGE_1": "Message",
       "CLIENT_MESSAGE_2": "Tell me about your projects and ideas"
     }
